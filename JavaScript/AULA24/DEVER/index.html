@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icon Page-->
+    <link rel="icon" href="./IMG/icon.png">
+    <!--Stylus BootStrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://mxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Stylus MDB-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet"/>
+    <!--Stylus CSS-->
+    <link rel="stylesheet" href="./CSS/stylus.css">
+    <!--Fontes Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Nandão Lanches</title>
+</head>
+<body>
+
+  <!--############## Header ############### -->
+
+  <header id="topo">
+    <img src="https://images.vittocdn.com.br/nandaolanches21/uploads/9881fb28986a474857956dd04026bd0c.png" width="180px">
+  </header>
+
+    <!--################ NavBar ######################-->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color:#F2CB05;">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" onclick="Home()" href="#">Home</a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Link -->
+        <li class="nav-item">
+          <a class="nav-link"  href="#" onclick="Cardapio()" >Cardapio</a>
+        </li>
+
+        <!-- Link -->
+        <li class="nav-item">
+          <a class="nav-link"  href="#" onclick="Pessoas()" >Pessoas</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle cdObj" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            Cadastrar
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <span>Pessoas</span>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" onclick="Entregador()" href="#">Entregador</a>
+            </li>
+            <li>
+              <a class="dropdown-item" onclick="Clientes()" href="#">Clientes</a>
+            </li>
+            <li>
+              <span>Produtos</span>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" onclick="Lanches()" href="#">Lanches</a>
+            </li>
+            <li>
+              <a class="dropdown-item" onclick="Cardapio()" href="#">Pedidos</a>
+            </li>
+          </ul>
+        </li>
+
+         <!-- Link -->
+         <li class="nav-item">
+          <a class="nav-link" href="#" onclick="Chegar()">Como Chegar</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+<!--####################### Section Form #######################-->
+
+<Section id="form">
+
+  <form  name="form">
+    <h3 id="incercao">Cadastro</h3>
+    <hr />
+    <div class="form-group">
+      <label for="produto">Tipo de Produto</label> 
+      <div>
+        <select onchange="tipoCadast()" id="produto" name="produto" class="custom-select">
+          <option value="0">Sucos</option>
+          <option value="1">Lanches</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="nome">Nome</label> 
+      <input id="nome" name="nome" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="ingred">Ingredientes</label> 
+      <input id="ingred" name="ingred" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="preco">Preço</label> 
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">R$</div>
+        </div> 
+        <input id="preco" name="preco" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="tel">Telefone</label> 
+      <input id="tel" name="tel" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="End">Endereço</label> 
+      <textarea id="End" name="End" cols="40" rows="3" class="form-control" style="resize: none;"></textarea>
+    </div> 
+    
+  </form>
+
+  <div class="form-group">
+    <button name="submit" type="submit" style="background-color: #341773; margin-left: 290px;" onclick="cadastra()" class="btn btn-primary">Cadastrar</button>
+  </div>
+
+</Section>
+
+<article class="block0">
+  <div class="overlay">
+      <div class="text">
+          <h3></h3>
+      </div>
+  </div>
+  <img class="imgh"
+      src="https://www.hostnet.com.br/modelos/site-para-lanchonete-1/wp-content/uploads/sites/25/2018/04/h2-img0.png"
+      class="image">
+</article>
+
+
+<!-- ############## Banner HOME #################### -->
+
+<section class="banner0">
+
+  <article class="banner">
+    <div style="padding-top: 35px;">
+        <span
+            style="text-shadow: 0 0 16.49px #000000; font-family: Sacramento; color: #341773;">Vamos</span>
+        <br>
+        <span
+            style="line-height: 100px; text-shadow: 5px 6px 1px #1f0852cb; font-family: oswald; color: #ffffff;">
+            &nbsp&nbsp&nbspLANCHAR </span>
+    </div>
+  
+  </article>
+  
+  <a href="#" onclick="Cardapio()">
+      <article class="block2">
+          <img class="imga" src="https://blog.saipos.com/wp-content/uploads/2020/01/delivery-lanches-2.jpg"
+              alt="image">
+      </article>
+      <article class="block2">
+          <img class="imga"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtkmYyksiEamlzfysIW--U8MVLed8Evpc3Ig&usqp=CAU"
+              alt="image">
+      </article>
+      <article class="block2">
+          <img class="imga"
+              src="https://conteudo.imguol.com.br/c/entretenimento/8c/2018/04/18/fast-food-lanche-1524056858988_v2_1183x887.jpg"
+              alt="image">
+      </article>
+      <article class="block2">
+          <img class="imga"
+              src="https://blog.saipos.com/wp-content/uploads/2020/04/como-abrir-lanchonete-nos-eua-SAIPOS-sistema-para-restaurante-7.jpg"
+              alt="image">
+      </article>
+      <article class="block2">
+          <img class="imga" src="https://www.ovale.com.br/_midias/jpg/2020/01/20/acai-883535.jpg" alt="image">
+      </article>
+      <article class="block2">
+          <img class="imga"
+              src="https://media-cdn.tripadvisor.com/media/photo-s/13/02/77/a9/barquinha-de-acai-ou.jpg"
+              alt="image">
+      </article>
+  </a>
+</section>
+
+<!-- ################# CARDAPIO ################# -->
+
+<section id="cardapio">
+
+
+</section>
+
+<!--################# PESSOA #################-->
+
+<section style="display: none;" id="pessoa">
+
+</section>
+
+<!-- ############### COMO CHEGAR ################ -->
+
+<section id="comoChegar">
+
+  <div id="maps">
+    <article>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!
+        1m3!1d8752.946217931965!2d-43.436856745722736!3d-22.72227325832073
+        7!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x423a5e15e07d3a19!2sNand%C3%A3
+        o%20Lanches!5e0!3m2!1spt-BR!2sbr!4v1613893475277!5m2!1spt-BR!2sbr" style="border:0;"></iframe>
+    </article>
+
+</div>
+
+</section>
+
+
+  
+</body>
+<script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+<script src="./JS/main.js"></script>
+</html>

@@ -1,0 +1,16 @@
+#questao1, #questao2, #questao3{
+    padding:0 0 10px 15px  ;
+}
+
+section{
+
+ 
+    margin: 150px auto;
+    width: 450px;
+    height: 250px;
+    padding: 2%;
+    border-radius: 15px;
+    color:darkgrey;
+    text-shadow: 0.5px 0.5px 0.1px white;
+    background-color: rgb(56, 55, 55);
+}

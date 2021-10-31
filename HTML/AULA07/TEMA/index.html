@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+
+<body>
+    <div id="divForm">
+        <form method="post">
+            <div class="labels">
+                <label for="nomeAluno">Nome: </label>
+            </div>
+            <div class="labels">
+                <label for="celular">Telefone: </label>
+            </div>
+            <div class="labels">
+                <label for="emailCorporativo">Email: </label>
+            </div>
+            <div class="labels">
+                <label for="senhaUsuario">Senha: </label>
+            </div>
+            <div class="labels">
+                <label for="end">Endereço: </label>
+            </div>
+            <div class="inputs">
+                <input name="nomeAluno" type="text" size="20" maxlength="50" placeholder="Nome Completo" required>
+            </div>
+            <div class="inputs">
+                <input type="tel" name="celular" maxlength="14" placeholder="(00) 00000-0000">
+            </div>
+            <div class="inputs">
+                <input type="email" name="emailCorporativo" required>
+            </div>
+            <div class="inputs">
+                <input type="password" name="senhaUsuario" maxlength="8" required>
+            </div>
+            <div class="inputs">
+                <input type="text" size="80" name="end" maxlength="150">
+            </div>
+            <div>
+                <button type="submit">Enviar Cadastro</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

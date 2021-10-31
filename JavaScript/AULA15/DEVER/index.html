@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Variedades</title>
+    <link rel="stylesheet" href="./CSS/stylus.css">
+</head>
+
+<body>
+
+    <section>
+    <h2 id="h22">Quiz de variedades</h2>
+    <!-- Questão 1 -->
+    <div id="questao1">
+        <p> 1 - Quem descobriu o Brasil</p>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="radios"></label>
+            <div class="col-md-4">
+                <div class="radio">
+                    <label for="radios-1A">
+                        <input type="radio" name="radios1" onchange="Quest('1','A')" id="radios-1A" value="A">
+                        Pedro Alvares Cabral
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label for="radios-1B">
+                        <input type="radio" name="radios1" onchange="Quest('1','B')" id="radios-1B" value="B">
+                        Cristóvão Colombo
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label for="radios-1C">
+                        <input type="radio" name="radios1" onchange="Quest('1','C')" id="radios-1C" value="C">
+                        Os índios
+                    </label>
+                </div>
+           
+            
+            <div class="radio">
+                <label for="radios-1D">
+                    <input type="radio" name="radios1" onchange="Quest('1', 'D')" id="radios-1D" value="D">
+                    Chapolin
+                </label>
+            </div>
+        </div>
+        </div>
+    </div>
+   
+    </div>
+    </div>
+    <!--Questão 2-->
+    <div id="questao2">
+        <p> 2 - Quem descobriu a América</p>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="radios"></label>
+            <div class="col-md-4">
+                <div class="radio">
+                    <label for="radios-2A">
+                        <input type="radio" name="radios2" onchange="Quest('2','A')" id="radios-2A" value="A">
+                        Pedro Alvares Cabral
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="radios-2B">
+                        <input type="radio" name="radios2" onchange="Quest('2','B')" id="radios-2B" value="B">
+                        Cristóvão Colombo
+                    </label>
+                </div>
+            </div>
+            <div class="radio">
+                <label for="radios-2C">
+                    <input type="radio" name="radios2" onchange="Quest('2','C')" id="radios-2C" value="C">
+                    Os índios
+                </label>
+            </div>
+            <div class="radio">
+                <label for="radios-2D">
+                    <input type="radio" name="radios2" onchange="Quest('2','D')" id="radios-2D" value="D">
+                    Vasco Da Gama
+                </label>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <!--Questão 3-->
+    <div id="questao3">
+        <p> 3 - Qual a raiz quadrada de 2?</p>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="radios"></label>
+            <div class="col-md-4">
+                <div class="radio">
+                    <label for="radios-3A">
+                        <input type="radio" name="radios3" onchange="Quest('3','A')" id="radios-3A" value="A">
+                        1,414
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label for="radios-3B">
+                        <input type="radio" name="radios3" onchange="Quest('3','B')" id="radios-3B" value="B">
+                        1,441
+                    </label>
+                </div>
+           
+
+            <div class="radio">
+                <label for="radios-3C">
+                    <input type="radio" name="radios3" onchange="Quest('3','C')" id="radios-3C" value="C">
+                    1,424
+                </label>
+            </div>
+            <div class="radio">
+                <label for="radios-3D">
+                    <input type="radio" name="radios3" onchange="Quest('3','D')" id="radios-3D" value="D">
+                    1,4442
+                </label>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <button onclick="finalizar()" id="finalizar">Finalizar</button>
+    <button onclick="proxima()" id="proxima">Proxima</button>
+
+    <div>
+
+        <p id="correção0"></p>
+        <p id="correção1"></p>
+        <p id="correção2"></p>
+
+    </div>
+</section>
+</body>
+<script src="./JS/main.js"></script>
+
+</html>

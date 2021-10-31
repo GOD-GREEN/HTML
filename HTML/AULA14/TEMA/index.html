@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url("./IMAGENS/fundo_do_site.png");
+        /*background-repeat: no-repeat;*/
+        /*no-repeat, repeat(todas as direções), repeat-x ou repeat-y*/
+        /*background-size: cover;*/
+        background-position: center;
+
+    }
+    #yellow{
+        background-image: url("IMAGENS/fundo-site.jpg");
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        background-size:cover;
+    }
+    h3{
+        color: brown;
+    }
+    #degrade1{
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(red 40%, white, black 30%, white);
+    }
+    #degrade2{
+       width: 350px;
+       height: 350px;
+       margin: 20px;
+       background-image: radial-gradient(rgb(147, 201, 147) 20%, green);
+
+    }
+    #duasimagens{
+        background-color: yellowgreen;
+        background-image: url("./IMAGENS/22143624264265.jpg"),
+                                 url("./IMAGENS/shuttle_vert.gif");
+        background-repeat: repeat-x, repeat;
+        background-size: 150px, 80px;
+        width: 600px;
+        height: 900px;
+    }
+
+</style>
+<body>
+    <h1>Imagem de fundo dos objetos</h1>
+    <div id="yellow">
+        <h3>Amarelo</h3>
+    </div>
+    <div id="degrade1"></div>
+    <div id="degrade2"></div>
+    <div id="duasimagens"></div>
+    <div id="treino1">
+        <h3>Coloque duas imagens de fundo sobrepostas</h3>
+        <p>Utilize a image de cima como ".png" para ter fundo
+            transparente, possibilitando visualizar a segunda imagem
+        </p>
+    </div>
+    <div>
+        <h3>coloque um fundo com degradê</h3>
+    </div>
+</body>
+</html>

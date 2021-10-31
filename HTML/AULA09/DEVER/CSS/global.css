@@ -1,0 +1,36 @@
+body{
+    background-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 
+    14pt;
+}
+
+#form{
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.campos{
+    width: 80%;
+    margin: 0 auto;
+    clear: both;
+}
+
+.labels{
+    width: 40%;
+    text-align: right;
+    float: left;
+}
+
+.inputs{
+    width: 60%;
+    float: left;
+}
+
+.divbtn{
+    text-align: center;
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+}

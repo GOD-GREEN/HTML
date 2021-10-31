@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Document Object Manangement</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <h1 id="titulo1" onmouseover="trocatitulo('titulo1')" 
+        onmouseout="trocatitulo('titulo1')">Manipulando Objectos</h1>
+
+    <p id="p1" onclick="trocacor('p1')">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat reiciendis eos iusto, quasi aliquid est reprehenderit, minus ipsa perferendis atque deleniti eligendi enim quas dolorem. Corporis sit magni odit praesentium!
+    </p>
+    <p id="p2" ondblclick="trocacor('p2')">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, enim a numquam, accusantium provident voluptate aliquam incidunt fuga libero quo culpa quae accusamus laborum soluta eaque at. Molestiae, exercitationem veritatis?
+    </p>
+    Tema notuno: <input type="checkbox" onchange="mudatema()">
+
+    <span id="tema">Modo Claro</span>
+        </br>
+    <input id="btn-tiratitulo" type="button" onclick="tiraObjeto('titulo1', 'btn-tiratitulo')" value="Tira Titulo">
+</body>
+<script src="./JS/main.js"></script>
+</html>

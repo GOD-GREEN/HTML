@@ -1,0 +1,209 @@
+#cal {
+    margin: 0 auto;
+    width: 744px;
+}
+
+#principal {
+    width: 340px;
+    height: 400px;
+    display: table;
+}
+
+#principal {
+    width: 330px;
+    height: 450px;
+    background-color: gray;
+    margin: 150px auto;
+    border-radius: 10px;
+    float: left;
+}
+
+#bar {
+    float: left;
+    margin: 12px 0 12px 10px;
+    width: 290px;
+    height: 35px;
+    font-size: 50pt;
+    padding: 25px 0;
+    font-family: 'Orbitron', sans-serif;
+    text-align: right;
+}
+
+#teclado {
+    display: table;
+    margin: 10px 13px 0 9px;
+    width: 230px;
+
+}
+
+.num {
+    display: table-cell;
+    padding: 12px;
+    margin: 5px;
+    width: 60px;
+}
+
+#zer {
+    display: table;
+    width: 60px;
+    height: 51px;
+    margin: 5px 5px 0 14px;
+    float: left;
+
+}
+
+.zr {
+    display: table-cell;
+    padding: 12px;
+    width: 60px;
+}
+
+#virg {
+    display: table;
+    width: 60px;
+    height: 51px;
+    float: left;
+    margin: 5px 5px 0 5px;
+}
+
+.v {
+    display: table-cell;
+    padding: 12px 12px;
+    width: 60px;
+}
+
+#clear {
+    display: table;
+    float: left;
+    margin: 5px 0 0 5px;
+
+
+}
+
+.c {
+    display: table-cell;
+    padding: 12px;
+    width: 60px;
+
+}
+
+#resul {
+    display: table;
+    float: left;
+    margin: 12px 0 0 16px;
+}
+
+#igual {
+    width: 289px;
+    display: table-cell;
+    padding: 12px;
+
+}
+
+#operacao {
+    display: table;
+    width: 75px;
+    float: right;
+    margin: -182px 10px 0 10px;
+}
+
+.op {
+
+    margin: 5px;
+    display: table-cell;
+    padding: 12px;
+    width: 55px;
+
+}
+
+.cient,
+.op,
+#igual,
+.resul,
+.num,
+.zr,
+.c,
+.v {
+    box-shadow: 3px 7px 5px;
+}
+
+#principal {
+    box-shadow: 1px 5px 10px 1px;
+}
+
+button:hover {
+    box-shadow: 1px 5px 3px;
+}
+
+button:active {
+    box-shadow: 1px 1px 0.5px;
+    transition: 25ms;
+
+}
+
+#hist {
+    float: left;
+
+    margin: 150px auto;
+
+
+}
+
+#histcal {
+    width: 255px;
+    height: 448px;
+    background-color: rgba(128, 128, 128, 0.582);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: none;
+    border: gray;
+    text-align: right, end;
+    font-size: 25pt;
+    resize: none;
+    text-align: end;
+    vertical-align: bottom;
+}
+
+
+
+#histop{
+    float: right;
+    width: 13px;
+    height: 60px;
+    padding: 0;
+    margin-top: 200px;
+    border: 1px solid gray;
+    font-size: 8pt;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-right: -11px;
+    box-shadow: 1px 3px 5px;
+}
+
+#tc1{
+    float: left;
+    width: 13px;
+    height: 60px;
+    padding: 0;
+    margin-top: 200px;
+    border: 1px solid gray;
+    font-size: 8pt;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: -11px;
+    box-shadow: 1px 3px 5px;
+}
+
+.cient {
+    display: table-cell;
+    padding: 12px;
+    margin: 5px;
+    width: 60px;
+}
+
+#tecladoF{
+    display: table;
+    width: 150px;
+    margin-left: 12px;
+}
+

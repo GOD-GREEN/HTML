@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #resultado {
+        display: none;
+    }
+
+    section {
+        width: 400px;
+        height: 350px;
+        background-color: gray;
+        margin: 200px auto;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 5px 10px 3px dimgray;
+    }
+
+    input {
+        margin: 10px 0 10px 0;
+    }
+
+    button {
+        margin: 10px 0 0 0;
+    }
+
+    h2 {
+        padding-top: 15px;
+    }
+</style>
+
+<body>
+    <section>
+        <h2>Sorteio</h2>
+        <div id="sorteio">
+            <div>
+                <input id="valor1" type="text" placeholder="Preencha o Primeiro valor">
+                <input id="valor2" type="text" placeholder="Preencha o Segundo valor">
+                <input id="quantS" type="text" placeholder="Preencha quantas repetições">
+                <br />
+                <input type="checkbox" name="check"> Deseja que não tenha numeros repetidos?
+            </div>
+            <button onclick="sortear()" id="sortido">Sortear</button>
+            <button onclick="mostrar()" id="mostra">Mostrar</button>
+        </div>
+        <div id='resultado'>
+            <textarea name="mostrar" id="most" cols="30" rows="10" disabled></textarea>
+        </div>
+    </section>
+</body>
+<script src="./JS/main.js"></script>
+
+</html>

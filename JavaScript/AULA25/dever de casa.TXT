@@ -1,0 +1,16 @@
+DEVER DE CASA -  vale 2 pts para o projeto para quem entregar funcionando antes da próxima aula começar.
+
+Usando o formulário enviado pelo professor como correção do dever de casa da aula anterior faça:
+
+O preenchimento dos ingredientes deverá ser feito 1 por cada caixa de texto (input para cada um). Ao lado da caixa, deverá ter um botão para adicionar outra caixa caso o usuário precise.
+
+ex;
+
+             __________________________
+ingrediente |__________________________| +
+
+ao clicar no "+" deverá ficar assim:
+             __________________________
+ingrediente |__________________________| +
+             __________________________
+            |__________________________| +

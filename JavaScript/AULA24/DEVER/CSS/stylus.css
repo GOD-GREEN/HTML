@@ -1,0 +1,154 @@
+#topo{
+    width: 100%;
+    background-image: linear-gradient(to bottom right,#F2C205,#F2EB05);
+}
+
+body{
+    width: 100%;
+    background-image: linear-gradient(to right,#F29F05, #F28705);
+}
+
+#topo img{
+    margin-left: 80px;
+}
+span{
+    padding: 20px;
+    color: rgb(95, 95, 95);
+}
+#form{
+    display: none;
+    margin: 40px auto;
+    width: 450px;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+
+
+form hr{
+    width: 100%;
+    color: gray;
+    padding: 0.5px;
+}
+
+.imgh {
+    width: 100%;
+    height: 90%;
+}
+
+.block0 {
+    
+    float: left;
+    width: 600px;
+    height: 1000px;
+    border: 5px solid rgba(240, 255, 255, 0);
+
+}
+
+.banner {
+    font-size: 100px;
+    float: left;
+    padding-left: 15px;
+    padding-right: 300px;
+}
+
+.banner0 {
+    width: 1000px;
+    height: 800px;
+}
+
+.block2 {
+    width: 320px;
+    height: 300px;
+    float: left;
+    border: 15px solid rgba(240, 255, 255, 0);
+}
+
+.imga {
+    width: 100%;
+    height: 100%;
+    border: 1.5px solid white;
+    border-radius: 100%;
+    box-shadow: 10px 10px 25px black;
+}
+
+@media screen and (min-width: 1610px){
+    .banner0{float: left}
+}
+
+@media screen and (max-width: 1610px){
+    .block0 {display: none}
+    .banner0 {margin: 0 auto}
+}
+
+#map {
+    display: none;
+    margin: 0 auto;
+    width: 900px;
+    height: 500px;
+    top: 250px;
+    border-radius: 15px;
+}
+#maps{
+    margin-top: 50px;
+}
+
+
+.registro{
+    width: 400px;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 3px;
+    margin: 5px auto;
+}
+
+/* CSS cardapio */
+
+.aa {
+    padding: 10px 0 20px 0;
+    background-color: white;
+    float: left;
+    width: 299.5px;
+    border: 5px solid rgba(128, 0, 128, 0.685);
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 12px;
+}
+
+.sp {
+    padding-left: 15px;
+}
+
+.ac {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25pt;
+
+}
+
+.ab {
+    text-align: center;
+}
+
+.ca{
+    float: right;
+}
+
+.ac {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25pt;
+
+}
+
+.btn0{
+    text-align: center;
+    margin: 0 50px;
+    padding-right: 60px;
+}
+
+.glyphicon{
+    text-align: center;
+}

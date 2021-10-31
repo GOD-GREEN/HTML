@@ -1,0 +1,11 @@
+DEVER DE CASA
+
+crie uma página, com o script em arquivo separado, que receba:
+nome, peso e altura de duas pessoas.
+
+Ao final responda as seguintes perguntas:
+"O primeiro cadastrado é mais alto que o segundo?"
+"O segundo cadastrado é mais leve que o primeiro?"
+
+---------------- DESAFIO PONTO EXTRA:
+Diga qual é o nome do mais alto e do mais pesado.

@@ -1,0 +1,32 @@
+.esconde {
+    display: none;
+}
+
+.container {
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+.valida {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+    width: 300px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.erroValida {
+    color: red;
+    font-size: 12pt;
+    text-align: center;
+    
+}
+.plus{
+    margin: 8px 5px 5px -5px;
+    width: 20px;
+}
+
+.adcio{
+    margin-top: 4px;
+}

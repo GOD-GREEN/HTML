@@ -1,0 +1,15 @@
+body{
+    color: cadetblue;
+    background-color: antiquewhite;
+}
+
+.fundopreto{
+    background-color: black;
+    color: azure;
+}
+
+#form{
+    background-color: aliceblue;
+    width: 900px;
+    margin: 0 auto;
+}

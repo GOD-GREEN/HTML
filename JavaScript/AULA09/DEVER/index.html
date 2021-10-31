@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <title>Cadastre-se</title>
+</head>
+<style>
+    .buttons {
+        margin: -140px auto;
+        text-align: center;
+    }
+
+    .form-horizontal {
+        margin: 150px auto;
+        width: 550px;
+    }
+
+    /*Comando usado para remover as setas do type Number.vvvv*/
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+
+    }
+
+    #consulte {
+        display: none;
+        margin-top: 150px;
+    }
+
+    .pessoa {
+        width: 250px;
+        background-color: lightblue;
+        box-shadow: 2px 2px 2px gray;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+
+    <ul>
+        <li><a class="active" onclick="consultar()">Consulta Geral</a></li>
+        <li><a onclick="doador()">Consulta de Doadores de Sangue</a></li>
+        <li><a onclick="imc()">Consulta IMC</a></li>
+        
+    </ul>
+
+    <form class="form-horizontal" name="cadastross">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Cadastre-se</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="nome">Nome Completo</label>
+                <div class="col-md-5">
+                    <input id="nome" name="nome" type="text" placeholder="Jucca Bala da Silva"
+                        class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <!-- Appended Input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="altura">Altura</label>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <input id="altura" name="altura" class="form-control" placeholder="1.70" type="number">
+                        <span class="input-group-addon">cm</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Appended Input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="peso">Peso</label>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <input id="peso" name="peso" class="form-control" placeholder="70" type="number">
+                        <span class="input-group-addon">Kg</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="idade">Idade</label>
+                <div class="col-md-2">
+                    <input id="idade" name="idade" type="number" placeholder="21" class="form-control input-md"
+                        required="">
+
+                </div>
+            </div>
+
+
+
+        </fieldset>
+    </form>
+
+    <!-- Button (Double) -->
+    <div class="form-group buttons">
+        <label class="col-md-4 control-label" for="button1id"></label>
+        <div class="col-md-11">
+            <button id="btn_1" name="button1id" class="btn btn-success" onclick="cadastro()">Cadastrar</button>
+            <button id="btn_2" name="button2id" class="btn btn-danger" onclick="limpa()">Limpar</button>
+        </div>
+    </div>
+    <br>
+    <div id="consulte">
+        
+                <span id="dados">
+            <div class="pessoa"></div>
+        </span>
+
+</body>
+<script src="./JS/main.js"></script>
+
+</html>

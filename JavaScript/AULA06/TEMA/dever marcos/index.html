@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/stylus.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <div id="cal" name="body_calc" acton>
+        <div id="principal" name="frm_calc">
+            <input type="text" name="txt_01" id="bar" value="" placeholder="0" disabled>
+            <div id="teclado">
+                <button class="num" name="btn_7" value="7" onclick="btn_num(7)">7</button>
+                <button class="num" name="btn_8" value="8" onclick="btn_num(8)">8</button>
+                <button class="num" name="btn_9" value="9" onclick="btn_num(9)">9</button>
+                <button class="num" name="btn_4" value="4" onclick="btn_num(4)">4</button>
+                <button class="num" name="btn_5" value="5" onclick="btn_num(5)">5</button>
+                <button class="num" name="btn_6" value="6" onclick="btn_num(6)">6</button>
+                <button class="num" name="btn_1" value="1" onclick="btn_num(1)">1</button>
+                <button class="num" name="btn_2" value="2" onclick="btn_num(2)">2</button>
+                <button class="num" name="btn_3" value="3" onclick="btn_num(3)">3</button>
+                
+            </div>
+
+            <div id="zer">
+                <button class="zr" name="btn_0" value="0" onclick="btn_num(0)">0</button>
+            </div>
+
+            <div id="virg">
+                <button class="v" name="btn_pont" onclick="btn_num('.')" value=".">.</button>
+            </div>
+
+            <div id="clear">
+                <button class="c" onclick="limpar()">C</button>
+            </div>
+
+            <div id="operacao">
+                <button class="op" name="btn_divi" value="/ " onclick="operacao('/')">/</button>
+                <button class="op" name="btn_mult" value="* " onclick="operacao('*')">*</button>
+                <button class="op" name="btn_subt" value=" -   " onclick="operacao('-')">-</button>
+                <button class="op" name="btn_soma" value="+ " onclick="operacao('+')">+</button>
+            </div>
+            
+            <div id="resul">
+                <button type="button" name="btn_igual" class="igual" value="=" onclick="calcula('=')">=</button>
+            </div>
+        </div>
+
+        <div>
+            <div id="hist">
+                <textarea type="text" id="histcal" name="text02" value="" maxlength="" rows="15" cols="12" disabled></textarea>
+            </div>
+        </div>
+       
+    </div>
+    
+</body>
+<script src="./JS/main.js"></script>
+</html>

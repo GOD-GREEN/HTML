@@ -1,0 +1,18 @@
+Dever de Casa
+
+Crie uma Pagina que receba 2 valores e diga:
+*Se os valores são par ou impar?
+*O quadrado do valor1
+*O cubo do valor2
+
+---------------------DESAFIO
+exiba a raiz quadrada dos numeros
+
+
+operadores matemáticos
+
++=
+-=
+*=
+/=
+%

@@ -1,0 +1,5 @@
+var nome
+var sobrenome
+receba nome
+receba sobrenome
+escreva (nome) + (sobrenome)

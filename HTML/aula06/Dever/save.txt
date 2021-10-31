@@ -1,0 +1,154 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icon.png">
+        <title>World Tech</title>
+    </head>
+    <style>
+        #title{
+            display: flex;
+            width: 100%;
+            height: 300px;
+            margin-top: 0;
+            
+           
+        }
+        .imgt{
+            width: 100%;
+            height: 100%;
+        }
+        #grad {
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right, rgb(55, 111, 216), rgb(6, 255, 234));
+        }
+       
+        
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        background-color: rgba(51, 51, 51, 0.295);
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: rgb(124, 163, 223);
+        }
+
+        .active {
+        background-color: #75aecf;
+        }
+        #footer{
+      
+           width: 100%;
+           height: 200px;
+           background-image: linear-gradient(to bottom right, rgb(31, 21, 21), rgb(58, 57, 57)); 
+          
+        }
+       
+        #content{
+            width: 1200px;
+            height: 700px;
+            margin: 0 auto;
+           
+        }
+        #content0{
+            width: 1170px;
+            height: 750px;
+            margin: 0 auto;
+            padding-bottom: 80px;
+        }
+        .vd{
+            width: 100%;
+            height: 100%;
+        }
+        .block1{
+            padding-top: 35px;
+            float: left;
+            width: 590px;
+            height: 420px;
+            border: 5px solid rgba(240, 255, 255, 0);
+        }
+        .block2{
+            width: 389px;
+            height: 265px;
+            float: left;
+            border: 5px solid rgba(240, 255, 255, 0);
+        }
+        .imgb{
+            width: 100%;
+            height: 100%;
+
+        }
+        
+    </style>
+    <body id="grad">
+        <header id="title">
+            <img class="imgt" src="https://okser.com.br/wp-content/uploads/2019/03/avance-em-tecnologia.png">
+            
+        </header>
+      
+        
+       <div id="a">
+        <aside id="leftbar">
+
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Hacking">Hacking</a></li>
+                <li><a href="#Hardware">Hardware</a></li>
+                <li><a href="#Foruns">Foruns</a></li>
+                <li><a href="#about">About</a></li>
+                
+
+              </ul>
+
+        </aside>
+       </div>
+
+
+        <section id="content">
+           
+
+            <article class="block1">
+                <img class="imgb" src="https://img.freepik.com/vetores-gratis/tecnologia-de-internet-em-nuvem_53876-94170.jpg?size=626&ext=jpg"></article>
+
+            <article class="block1">
+                <img class="imgb" src="https://img.freepik.com/fotos-gratis/icon-internet-world-nas-maos-de-uma-tecnologia-de-rede-de-empresario-e-comunicacao_34998-149.jpg?size=626&ext=jpg"></article>
+
+            <article class="block2">
+                <img class="imgb" src="https://static7.depositphotos.com/1006354/787/i/600/depositphotos_7872302-stock-photo-bunch-of-optical-fibres-dinamic.jpg"></article>
+
+            <article class="block2">
+                <img class="imgb" src="http://www.srcomputador.com.br/blog/wp-content/uploads/2016/09/processador-1.jpg"></article>
+
+            <article class="block2">
+                <img class="imgb" src="https://certificadodigitalblumenau.com.br/wp-content/uploads/2019/12/Biometria.jpg"></article>
+
+        </section>
+        <section id="content0">
+            <iframe class="vd" width="560" height="315" src="https://www.youtube.com/embed/LtVb9rhU41c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <footer id="footer">
+        </footer>
+    </body>
+    </html>

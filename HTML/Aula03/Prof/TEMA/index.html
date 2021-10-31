@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação TABLE</title>
+</head>
+<style>
+    h2{ /* abro chaves para abrir um bloco de comandos. */
+    /* qualquer tag h2 */
+        font-size: 20pt;
+        color: chartreuse;
+        text-decoration: underline;
+    }
+
+    #loja1{ /* no id loja 1 */
+        border: 1px solid red;
+    }
+
+    #loja1 th{ /* dentro do id loja1 a tag th*/
+        border: 1px solid black;
+        background-color:lightgray;
+    }
+
+    td{/*qualquer td*/
+        border: 1px solid blue;
+        background-color: darkcyan;
+    }
+
+    th{
+        color: white;
+        background-color: black;
+        font-weight: bolder;
+    }
+
+    .dinheiro{/*classe*/
+        color: green;
+        background-color: lightcoral;
+    }
+
+    p{
+        font-size: 12pt;
+        color: ivory;
+        background-color: darkgray;
+    }
+
+    li{
+        font-size: 10pt;
+        color:gray;
+    }
+</style>
+<body>
+    <h2>Tabelas com célula mesclada</h2>
+
+    <table id="loja1">
+        <thead>
+            <tr>
+                <th colspan="3">Loja de Instrumentos</th>
+            </tr>
+            <tr>
+                <th>Instrumento</th>
+                <th>Tipo</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Violão</td>
+                <td>Cordas</td>
+                <td class="dinheiro">R$ 2.500,00</td>
+            </tr>
+            <tr>
+                <td>Bateria</td>
+                <td>Percurssão</td>
+                <td class="dinheiro">R$ 7.500,00</td>
+            </tr>
+            <tr>
+                <td>Piano</td>
+                <td>Percurssão</td>
+                <td class="dinheiro">R$ 10.500,00</td>
+            </tr>
+            <tr>
+                <td>Baixo</td>
+                <td>Cordas</td>
+                <td class="dinheiro">R$ 4.800,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total em estoque</th>
+                <td class="dinheiro">R$ 25.300,00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr/>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Loja de Instrumentos</th>
+            </tr>
+            <tr>
+                <th>Tipo</th>
+                <th>Instrumento</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Cordas</td>
+                <td>Violão</td>
+                <td class="dinheiro">R$ 2.500,00</td>
+            </tr>
+            <tr>
+                <td>Baixo</td>
+                <td class="dinheiro">R$ 4.800,00</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Percurssão</td>
+                <td>Bateria</td>
+                <td class="dinheiro">R$ 7.500,00</td>
+            </tr>
+            <tr>
+                <td>Piano</td>
+                <td class="dinheiro">R$ 10.500,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total em estoque</th>
+                <td class="dinheiro">R$ 25.300,00</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <hr/>
+
+    <p>
+        Dentro da <b>tabela</b>, as céluas tem as <strong>propriedades</strong><br/>
+        <!--tag b (bold) está em desuso. Ficou legado ao html4-->
+        que <i>definem</i> a <u>ocupação de linhas e colunas</u>. Sendo:
+        <!-- u (underline), sublinhado-->
+    </p>
+    
+    <ul><!--ul (unnumrated list), lista não numera ou lista com marcadores-->
+        <li><!-- li (list item), cada item de uma lista-->
+            Colspan -> define quantas colunas a célula irá ocupar.
+        </li>
+        <li>
+            Rowspan -> define quantas linhas a célula irá ocupar.
+        </li>
+    </ul>
+    
+    <p>
+        Lista numerada:
+    </p>
+    
+    <ol><!-- ol (organized list), lista numerada-->
+        <li>Item da lista</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ol>
+
+    <h3>CSS - Cascade Style Sheet</h3>
+    <p>
+        O CSS, ou folha de estilo em cascata, é usado para formatar <strong>quaisquer 
+        itens</strong> de um documento. Ele pode ser aplicado de duas formas:
+        <ol>
+            <li>
+                Inline -> usado como propriedade do elemento HTML.
+            </li>
+            <li>
+                Por referência -> dentro de uma folha de estilo.
+            </li>
+        </ol>
+    </p>
+
+    <p style="color: red; font-family: Verdana; font-size: 14pt;">
+        Formatação realizada inline. &nbsp;Ou seja, diretamente no 
+        elemento HTML &reg.
+        <!-- &nbsp; insere um espaço vazio 
+             &reg; símbolo de marca registrada -->
+    </p>
+</body>
+</html>

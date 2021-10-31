@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dever de casa Formulário</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css"/>
+</head>
+<body>
+    <div id="form">
+        <div class="campos">
+            <div class="labels">
+                <label for="fabricante">Fabricante:</label>
+            </div>
+            <div class="inputs">
+                <input type="text" name="fabricante" placeholder="FIAT/FORD/GM/WV" 
+                maxlength="10" required/>
+            </div>
+        </div><!-- fim do campo -->
+        <div class="campos">
+            <div class="labels">
+                <label for="modelo">Modelo:</label>
+            </div>
+            <div class="inputs">
+                <input type="text" name="modelo" 
+                maxlength="15" required/>
+            </div>
+        </div><!-- fim do campo -->
+        <div class="campos">
+            <div class="labels">
+                <label for="ano">Ano:</label>
+            </div>
+            <div class="inputs">
+                <input type="number" name="ano"/>
+            </div>
+        </div><!-- fim do campo -->
+        <div class="campos">
+            <div class="labels">
+                <label for="cor">Cor:</label>
+            </div>
+            <div class="inputs">
+                <input type="text" name="cor" maxlength="20" required/>
+            </div>
+        </div><!-- fim do campo -->
+        <div class="divbtn">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </div>
+</body>
+</html>

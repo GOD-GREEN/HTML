@@ -1,0 +1,6 @@
+crie uma pagina que receba: nome , idade e sexo de uma pessoa. E exiba:
+Ex.:
+
+Nome: Juca Bala
+Sexo: Masculino
+Idade: 22. Ano de Nascimento: 1999

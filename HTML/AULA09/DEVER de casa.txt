@@ -1,0 +1,10 @@
+crie uma página de cadastro de Pessoas com:
+nome, sobrenome
+data de nascimento
+telefone
+email
+sexo
+Peso
+altura
+endereço (rua, numero, bairro, municipio, uf<select>)
+

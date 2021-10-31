@@ -1,0 +1,140 @@
+#formulaF,
+#resulF,
+#formulaC,
+#resulC,
+#formulaP,
+#resulP {
+  display: none;
+  margin: 0 auto;
+}
+
+.formul {
+  text-shadow: 1px 2px 2px;
+  color: #333;
+  margin: 50px auto;
+  text-align: center;
+  padding: 30px;
+  width: 600px;
+  height: 130px;
+  border: solid 1px gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px gray;
+}
+
+.none{
+  text-shadow: 1px 1px 1px  white;
+  text-align: center;
+  font-size: 20px;
+}
+
+#funcioCadastF, #funcioCadastP, #funcioCadastC{
+  width: 500px;
+  height: 100%;
+  padding: 20px;
+  background-color: turquoise;
+  border-radius: 12px;
+}
+
+#boxCad {
+  background-color: white;
+  padding: 5px;
+  width: 300px;
+  height: 100px;
+  margin: 15px auto;
+  border: solid 1px gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px gray;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#formulaC {
+  margin: 100px auto;
+  width: 600px;
+  height: 230px;
+  border: solid 1px gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px gray;
+}
+
+#formulaF,
+#formulaP {
+  margin: 100px auto;
+  width: 600px;
+  height: 330px;
+  border: solid 1px gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px gray;
+}
+
+#cadastraF {
+  margin: 50px -10px 0px 0px;
+  float: right;
+
+}
+
+#funcioCadast {
+  width: 200px;
+  height: 200px;
+}
+
+/*
+CSS Nav Bar
+*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropbn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdon:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdon {
+  display: inline-block;
+}
+
+.dropdon-conten {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdon-conten a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdon-conten a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdon:hover .dropdon-conten {
+  display: block;
+}

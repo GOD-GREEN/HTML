@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingUp</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Silver_medal_icon_%28S_initial%29.svg/1024px-Silver_medal_icon_%28S_initial%29.svg.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="top">
+        <H1>Bem Vindo!!</H1>
+    </header>
+    <div id="block">
+        <form class="form-horizontal">
+            <fieldset>
+            
+            <!-- Form Name -->
+            <legend id="fg">Cadastro Pessoal</legend>
+            
+            <!-- Text input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="Nome e Sobrenome">Nome e Sobrenome</label>  
+            <div class="col-md-4">
+            <input id="Nome e Sobrenome" name="Nome e Sobrenome" type="text" placeholder="Nome e Sobrenome" class="form-control input-md" required="">
+                
+            </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="Data de Nascimento">Nascimento</label>  
+            <div class="col-md-4">
+            <input id="Data de Nascimento" name="Data de Nascimento" type="date" placeholder="Selecione a Data que Nasceu" class="form-control input-md" required="">
+                
+            </div>
+            </div>
+            
+            <!-- Prepended text-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="tel">Telefone</label>
+            <div class="col-md-4">
+                <div class="input-group">
+                <span class="input-group-addon">+55</span>
+                <input id="tel" name="tel" class="form-control" placeholder="(66) 00000-0000" type="tel" required>
+                </div>
+                
+            </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="email">E-Mail</label>  
+            <div class="col-md-4">
+            <input id="email" name="email" type="email" placeholder="ex.:usuario47@email.com" class="form-control input-md" required="">
+                
+            </div>
+            </div>
+            
+            <!-- Multiple Radios -->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="sexo">Genero</label>
+            <div class="col-md-4">
+            <div class="radio">
+                <label for="sexo-0">
+                <input type="radio" name="sexo" id="sexo-0" value="1">
+                Homem
+                </label>
+                </div>
+            <div class="radio">
+                <label for="sexo-1">
+                <input type="radio" name="sexo" id="sexo-1" value="2">
+                Mulher
+                </label>
+                </div>
+            <div class="radio">
+                <label for="sexo-2">
+                <input type="radio" name="sexo" id="sexo-2" value="3">
+                Outros
+                </label>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Appended Input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="peso">Peso</label>
+            <div class="col-md-4">
+                <div class="input-group">
+                <input id="peso" name="peso" class="form-control" placeholder="Seu Peso" type="number">
+                <span class="input-group-addon">Kg</span>
+                </div>
+                
+            </div>
+            </div>
+            <!-- Appended Input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="altura">Altura</label>
+            <div class="col-md-4">
+                <div class="input-group">
+                <input id="altura" name="altura" class="form-control" placeholder="Sua altura" type="number">
+                <span class="input-group-addon">cm</span>
+                </div>
+                <p class="help-block">Em centímetros.!</p>
+            </div>
+            </div>
+            <!-- Button Drop Down -->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="endereço">Endereço</label>
+            <div  id="KL"  class="col-md-4">
+                <div class="input-group">
+                <input id="endereço" name="endereço" class="form-control" placeholder="rua, numero, bairro, município." type="text">
+               <!-- Form Name -->
+                   
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                    <label class="col-md-4 control-label" for="uf"></label>
+                    <div class="col-md-2">
+                        <select id="uf" name="uf" class="form-control">
+                        
+                        <option value="2">AC</option>
+                        <option value="3">AL</option>
+                        <option value="4">AP</option>
+                        <option value="5">AM</option>
+                        <option value="6">BA</option>
+                        <option value="7">CE</option>
+                        <option value="8">DF</option>
+                        <option value="9">ES</option>
+                        <option value="10">GO</option>
+                        <option value="11">MA</option>
+                        <option value="12">MT</option>
+                        <option value="13">MS</option>
+                        <option value="14">MG</option>
+                        <option value="15">PA</option>
+                        <option value="16">PB</option>
+                        <option value="17">PR</option>
+                        <option value="18">PE</option>
+                        <option value="19">PI</option>
+                        <option value="20">RJ</option>
+                        <option value="21">RN</option>
+                        <option value="22">RS</option>
+                        <option value="23">RO</option>
+                        <option value="24">RR</option>
+                        <option value="25">SC</option>
+                        <option value="26">SP</option>
+                        <option value="27">SE</option>
+                        <option value="28">TO</option>
+                        <option value="29" selected>UF</option>
+                        </select>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group butao">
+                <label class="col-md-4 control-label" for="confirmar"></label>
+                <div class="col-md-4">
+                <button type="submit" id="confirmar" name="confirmar" class="btn btn-primary">Criar Conta</button>
+                </div>
+            </div>
+            
+            </fieldset>
+            </form>
+        </div> 
+</body>
+</html>

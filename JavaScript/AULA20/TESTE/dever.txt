@@ -1,0 +1,16 @@
+Teste parcial (2pts para AV FINAL)
+
+aproveitando o código usado no dever de casa, crie:
+
+-formulário de cadastro de clientes (nome, telefone)
+
+-formulário de cadastro de produtos (nome, fabricante, preço)
+
+Altere o navbar para ter os seguintes links:
+Funcionários, Clientes e Produtos. todos eles com dropdown para ter cadastro e consulta.
+ao clicar em cadastro será exibido o formulário referente.
+ao clicar em consulta será exibido os objetos cadastrados.
+
+-----
+
+ENTREGA ATÉ AS 22:35H

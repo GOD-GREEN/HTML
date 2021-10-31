@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula01 - JS</title>
+</head>
+<body>
+    
+</body>
+<script>
+    window.alert("Hello World");/* Texto entre aspas*/
+    console.log("Olá Mundo!");//Texto entre aspas
+    console.log('Aspas simples');
+    console.log(" Texto 'entre aspas' simples");
+    console.log('Texto "entre aspas" duplas');
+
+    /*variavel-> armazenamento volátil de imformação
+    CPU (cache), RAM, HD
+    */
+
+    let nome;
+    let idade;
+    let sexo = "feminino";
+    /*variaveis=> não podem começar com número, ter espaços, acentos, cedilha ou simbulas*/
+    let nomeCompleto; //camel case
+    let name_completo; //snake case
+    let Nome_completo; //nome de variavel é key sensitive. Diferença maiusculas e minusculas
+
+    nome = 'fulano';
+    sexo = 'masculino';
+
+    console.log(nome);
+    console.log("nome");
+
+    let nota1, nota2, nota3; /*declarei 3 variaveis*/
+    nota1 = 10;
+    nota2 = 8;
+    nota3 = 7;
+    /*exibir media*/
+    console.log((nota1+nota2+nota3)/3);
+    /* / divisão, * multiplicação, - subitração e + soma */ 
+
+    let media = ( nota1+nota2+nota3) /3;
+
+    window.alert(media);
+
+    console.log("A media do aluno é: " + media + ".");
+    /* ao somar texto com dados, o texto concatena com (junta) com o dado */
+
+    nome = window.prompt("Qual o seu nome?");
+
+    console.log("Olá " + nome);
+    /*
+    O JS define o tipo da variavel pelo seu conteúdo, não por sua declaração.
+    */
+</script>
+</html>

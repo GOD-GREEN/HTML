@@ -1,0 +1,12 @@
+DEVER DE CASA
+ adicione à sua calculador os seguintes botões:
+ 1 -  em qualquer lugar, dentro ou fora da calculadora, crie um botão, checkbox,
+         imagem ou etc, que exiba ou esconda os botões abaixo.
+    
+    * raiz = faz a raiz quadrada do valor que está sendo exibido.
+    
+    * pow(potência) = recebe o valor da potencia e exibe o resultado. 
+        EXEMPLO: o visor está com 2, ao clicar em pow o visor será zerado, 
+            receberá o valor da potência e exibirá no visor 2 levado à potência recebida.
+    
+    * modo = exibirá o modo do valor.

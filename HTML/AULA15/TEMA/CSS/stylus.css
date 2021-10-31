@@ -1,0 +1,29 @@
+body{
+    background-color: yellow;
+}
+
+#borda{
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 25px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px;
+}
+
+.sombrasimples{
+    color: black;
+    text-shadow: 1.5px 1.5px 1px rgba(128, 128, 128, 0.651);
+}
+
+#bordasombra{
+    box-shadow: 10px 10px 10px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+
+.sombradupla{
+    text-shadow: 0px 0px 2px blue, 0px 0px 10px green;
+}

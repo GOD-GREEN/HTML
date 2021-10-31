@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+
+</head>
+
+<body>
+    <header>
+
+        <ul>
+
+            <li><a href="#"  onclick="home()">Home</a></li>
+
+            <li class="dropdon">
+                <a href="#" onclick="cadastrarF()" class="dropbn">Funcionarios</a>
+                <div class="dropdon-conten">
+                    <a href="#" onclick="cadastrarF()">Cadastrar</a>
+                    <a href="#" onclick="cadastradosF()">Cadastrados</a>
+                </div>
+            </li>
+
+            <li class="dropdon">
+                <a href="javascript:void(0)" onclick="cadastrarC()" class="dropbn">Clientes</a>
+                <div class="dropdon-conten">
+                    <a href="#" onclick="cadastrarC()">Cadastrar</a>
+                    <a href="#" onclick="cadastradosC()">Cadastrados</a>
+                </div>
+            </li>
+
+            <li class="dropdon">
+                <a href="javascript:void(0)" onclick="cadastrarP()" class="dropbn">Produtos</a>
+                <div class="dropdon-conten">
+                    <a href="#" onclick="cadastrarP()">Cadastrar</a>
+                    <a href="#" onclick="cadastradosP()">Cadastrados</a>
+                </div>
+            </li>
+
+        </ul>
+
+    </header>
+
+    <!--Formulario Home dos Formularios-->
+    <div id="home">
+        <div class="formul">
+            <form class="form-horizontal">
+                <h1><a href="#" onclick="cadastrarF()">Cadastro de Funcionarios</a></h1>
+        </div>
+
+        <div class="formul">
+            <form class="form-horizontal">
+                <h1><a href="#" onclick="cadastrarC()">Cadastro de Clientes</a></h1>
+        </div>
+
+        <div class="formul">
+            <form class="form-horizontal">
+                <h1><a href="#" onclick="cadastrarP()">Cadastro de Produtos</a></h1>
+        </div>
+
+        <div id="resul">
+            <div id="funcioCadast"></div>
+        </div>
+    </div>
+
+    <!--Formulario de Funcionarios-->
+
+    <div id="formulaF">
+        <form name="FormFunc" class="form-horizontal">
+
+            <legend>Cadastro de Funcionários</legend>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="name">Nome*</label>
+                <div class="col-md-5">
+                    <input id="name" name="name" type="text" placeholder="Emanuel Batista" class="form-control input-md"
+                        required="">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="nasc">Data de Nascimento*</label>
+                <div class="col-md-5">
+                    <input id="nasc" name="nasc" type="date" placeholder="" class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="tel">Telefone/Celular*</label>
+                <div class="col-md-5">
+                    <input id="tel" name="tel" type="number" placeholder="90000-0000" maxlength="11"
+                        class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="email">E-Mail*</label>
+                <div class="col-md-6">
+                    <input id="email" name="email" type="email" placeholder="Seuemail@Email.com"
+                        class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+        </form>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="cadastra"></label>
+            <div class="col-md-4">
+                <button id="cadastraF" name="cadastra" onclick="cadastraF()" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="resulF">
+        <div id="funcioCadastF"></div>
+    </div>
+
+    <!--Formulario de Clientes-->
+
+    <div id="formulaC">
+        <form class="form-horizontal">
+
+            <legend>Cadastro de Clientes</legend>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="name">Nome*</label>
+                <div class="col-md-4">
+                    <input id="nameC" name="name" type="text" placeholder="Emanuel Batista"
+                        class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="tel">Telefone/Celular*</label>
+                <div class="col-md-4">
+                    <input id="telC" name="tel" type="number" placeholder="90000-0000" maxlength="11"
+                        class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+        </form>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="cadastra"></label>
+            <div class="col-md-4">
+                <button id="cadastraC" name="cadastra" onclick="cadastraC()" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="resulC">
+        <div id="funcioCadastC"></div>
+    </div>
+
+
+
+
+    <!--Formulario de Produtos-->
+
+    <div id="formulaP">
+        <form class="form-horizontal">
+            <fieldset>
+
+                <legend>Cadastro de Produtos</legend>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="nomeProd">Nome do Produto*</label>
+                    <div class="col-md-4">
+                        <input id="nomeProd" name="nomeProd" type="text" placeholder="Produto"
+                            class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="fab">Fabricante</label>
+                    <div class="col-md-4">
+                        <input id="fab" name="fab" type="text" placeholder="Fabricante" class="form-control input-md"
+                            required="">
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="preco">Preço</label>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">R$:</span>
+                            <input id="preco" name="preco" class="form-control" placeholder="00,00" type="text"
+                                required="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="cadastra"></label>
+            <div class="col-md-4">
+                <button id="cadastraP" name="cadastra" onclick="cadastraP()" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="resulP">
+        <div id="funcioCadastP"></div>
+    </div>
+
+
+</body>
+<script src="./JS/main.js"></script>
+
+</html>

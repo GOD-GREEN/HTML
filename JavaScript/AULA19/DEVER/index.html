@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+
+<style>
+
+    #resul{
+        display: none;
+    }
+    #boxCad{
+        padding: 5px;
+        width: 300px;
+        height: 100px;
+        margin: 15px;
+        border: solid 1px gray;
+        border-radius: 10px;
+        box-shadow: 5px 5px 12px gray;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    a:link{
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+
+    legend {
+        text-align: center;
+    }
+
+    #formula {
+        margin: 100px auto;
+        width: 600px;
+        height: 330px;
+        border: solid 1px gray;
+        border-radius: 10px;
+        box-shadow: 5px 5px 12px gray;
+    }
+
+    #cadastra {
+        margin: 20px -100px 0px 0px;
+        float: right;
+
+    }
+    #funcioCadast{
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+<body>
+    <header>
+        <ul>
+            <li><a onclick="cadastrar()">Cadastrar</a></li>
+            <li><a onclick="cadastrados()">Cadastrados</a></li>
+            </div>
+        </ul>
+    </header>
+
+    <div id="formula">
+        <form class="form-horizontal">
+
+            <legend>Cadastro de Funcionários</legend>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="name">Nome*</label>
+                <div class="col-md-4">
+                    <input id="name" name="name" type="text" placeholder="Emanuel Batista" class="form-control input-md"
+                        required="">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="nasc">Data de Nascimento*</label>
+                <div class="col-md-4">
+                    <input id="nasc" name="nasc" type="date" placeholder="" class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="tel">Telefone/Celular*</label>
+                <div class="col-md-4">
+                    <input id="tel" name="tel" type="number" placeholder="90000-0000" maxlength="11" class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="email">E-Mail*</label>
+                <div class="col-md-4">
+                    <input id="email" name="email" type="email" placeholder="Seuemail@Email.com"
+                        class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+        </form>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="cadastra"></label>
+            <div class="col-md-4">
+                <button id="cadastra" name="cadastra" onclick="cadastra()" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="resul">
+            <div id="funcioCadast"></div>
+    </div>
+</body>
+<script src="./JS/main.js"></script>
+
+</html>

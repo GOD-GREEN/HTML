@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+#cal {
+    margin: 0 auto;
+    width: 744px;
+}
+
+#principal {
+    width: 340px;
+    height: 400px;
+    display: table;
+}
+
+#principal {
+    width: 330px;
+    height: 450px;
+    background-color: gray;
+    margin: 150px auto;
+    border-radius: 10px;
+    float: left;
+}
+
+#bar {
+    float: left;
+    margin: 12px 0 12px 10px;
+    width: 290px;
+    height: 35px;
+    font-size: 50pt;
+    padding: 25px 0;
+    font-family: 'Orbitron', sans-serif;
+    text-align: right;
+}
+
+#teclado {
+    display: table;
+    margin: 10px 13px 0 9px;
+    width: 230px;
+
+}
+
+.num {
+    display: table-cell;
+    padding: 12px;
+    margin: 5px;
+    width: 60px;
+}
+
+#zer {
+    display: table;
+    width: 60px;
+    height: 51px;
+    margin: 5px 5px 0 14px;
+    float: left;
+
+}
+
+.zr {
+    display: table-cell;
+    padding: 12px;
+    width: 60px;
+}
+
+#virg {
+    display: table;
+    width: 60px;
+    height: 51px;
+    float: left;
+    margin: 5px 5px 0 5px;
+}
+
+.v {
+    display: table-cell;
+    padding: 12px 12px;
+    width: 60px;
+}
+
+#clear {
+    display: table;
+    float: left;
+    margin: 5px 0 0 5px;
+
+
+}
+
+.c {
+    display: table-cell;
+    padding: 12px;
+    width: 60px;
+
+}
+
+#resul {
+    display: table;
+    float: left;
+    margin: 12px 0 0 16px;
+}
+
+#igual {
+    width: 289px;
+    display: table-cell;
+    padding: 12px;
+
+}
+
+#operacao {
+    display: table;
+    width: 75px;
+    float: right;
+    margin: -182px 10px 0 10px;
+}
+
+.op {
+
+    margin: 5px;
+    display: table-cell;
+    padding: 12px;
+    width: 55px;
+
+}
+
+.cient,
+.op,
+#igual,
+.resul,
+.num,
+.zr,
+.c,
+.v {
+    box-shadow: 3px 7px 5px;
+}
+
+#principal {
+    box-shadow: 1px 5px 10px 1px;
+}
+
+button:hover {
+    box-shadow: 1px 5px 3px;
+}
+
+button:active {
+    box-shadow: 1px 1px 0.5px;
+    transition: 25ms;
+
+}
+
+#hist {
+    float: left;
+
+    margin: 150px auto;
+
+
+}
+
+#histcal {
+    width: 255px;
+    height: 448px;
+    background-color: rgba(128, 128, 128, 0.582);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: none;
+    border: gray;
+    text-align: right, end;
+    font-size: 25pt;
+    resize: none;
+    text-align: end;
+    vertical-align: bottom;
+}
+
+
+
+#histop{
+    float: right;
+    width: 13px;
+    height: 60px;
+    padding: 0;
+    margin-top: 200px;
+    border: 1px solid gray;
+    font-size: 8pt;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-right: -11px;
+    box-shadow: 1px 3px 5px;
+}
+
+#tc1{
+    float: left;
+    width: 13px;
+    height: 60px;
+    padding: 0;
+    margin-top: 200px;
+    border: 1px solid gray;
+    font-size: 8pt;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: -11px;
+    box-shadow: 1px 3px 5px;
+}
+
+.cient {
+    display: table-cell;
+    padding: 12px;
+    margin: 5px;
+    width: 60px;
+}
+
+#tecladoF{
+    display: table;
+    width: 150px;
+    margin-left: 12px;
+}
+
+
+</style>
+<body>
+    <div id="cal" name="body_calc" acton>
+        <div id="principal" name="frm_calc">
+            <input id="histop" type="button" value="||>" onclick="ophist('histcal','histop')">
+            <input id="tc1" type="button" value="||<" onclick="opcient('tecladoF','tc1','principal','tccs1','bar','igual')">
+            <input type="text" name="txt_01" id="bar" value="" placeholder="0" disabled>
+            <div id="tecladoF">
+                <button class="cient" value="%" onclick="operacao('%')">%</button>
+                <button class="cient" value="potencia" onclick="operacao('P')">P</button>
+                <button class="cient" value="moda" onclick="operacao('M')">M</button>
+                <button class="cient" value="√" onclick="operacao('√')">√</button>
+                <button class="cient" value="("  onclick="btn_num('(')">(</button>
+                <button class="cient" value=")" onclick="btn_num(')')">)</button>
+                <button class="cient" value="x²" onclick="operacao('x²')">x²</button>
+                <button class="cient" value="⎌">⎌</button>
+            </div>
+            <div id="tccs1">
+                <div id="teclado">
+                    <button class="num" name="btn_7" value="7" onclick="btn_num(7)">7</button>
+                    <button class="num" name="btn_8" value="8" onclick="btn_num(8)">8</button>
+                    <button class="num" name="btn_9" value="9" onclick="btn_num(9)">9</button>
+                    <button class="num" name="btn_4" value="4" onclick="btn_num(4)">4</button>
+                    <button class="num" name="btn_5" value="5" onclick="btn_num(5)">5</button>
+                    <button class="num" name="btn_6" value="6" onclick="btn_num(6)">6</button>
+                    <button class="num" name="btn_1" value="1" onclick="btn_num(1)">1</button>
+                    <button class="num" name="btn_2" value="2" onclick="btn_num(2)">2</button>
+                    <button class="num" name="btn_3" value="3" onclick="btn_num(3)">3</button>
+
+                </div>
+
+                <div id="zer">
+                    <button class="zr" name="btn_0" value="0" onclick="btn_num(0)">0</button>
+                </div>
+
+                <div id="virg">
+                    <button class="v" name="btn_pont" onclick="btn_num('.')" value=".">.</button>
+                </div>
+
+                <div id="clear">
+                    <button class="c" onclick="limpar()">C</button>
+                </div>
+
+                <div id="operacao">
+                    <button class="op" name="btn_divi" value="/ " onclick="operacao('/')">/</button>
+                    <button class="op" name="btn_mult" value="* " onclick="operacao('*')">*</button>
+                    <button class="op" name="btn_subt" value=" -   " onclick="operacao('-')">-</button>
+                    <button class="op" name="btn_soma" value="+ " onclick="operacao('+')">+</button>
+                </div>
+            </div>
+            <div id="resul">
+                <button name="btn_igual" id="igual" value="=" onclick="calcula('=')">=</button>
+            </div>
+        </div>
+
+        <div>
+            
+            <div id="hist">
+                <textarea type="text" id="histcal" name="text02" value="" onload="carregamento('histcal')" maxlength="" rows="15" cols="12"
+                    disabled></textarea>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script> 
+
+
+    var bar = document.getElementById("bar");
+    var histcal = document.getElementById("histcal");
+    var tecladoF = document.getElementById("tecladoF");
+    histcal.value = "";
+    bar.value = "";
+    var operador = "";
+    var memoria = 0;
+    histcal.style.display = "none";
+    tecladoF.style.display = "none";
+    
+    function btn_num(valor) {
+    
+    
+        if (bar.value.includes(".") && valor === ".") {
+            window.alert("já possui ponto.")
+        } else if (valor == "." && bar.value == "") {
+            bar.value = ("0.")
+        } else {
+            bar.value += valor; // visor.value = visor.value + valor;
+        }
+    }
+    
+    function calcula() {
+        let total
+        if (operador === "") {
+            window.alert("Você não escolheu um operador!");
+        } else {
+            if (operador === "+") {
+                var valoratual = Number(bar.value);
+                total = memoria + valoratual;
+                bar.value = (total);
+    
+            } else if (operador === "-") {
+                valoratual = Number(bar.value)
+                total = memoria - valoratual;
+                bar.value = total;
+    
+            } else if (operador === "*") {
+                valoratual = Number(bar.value);
+                total = memoria * valoratual;
+                bar.value = (total);
+    
+            } else if (operador === "/") {
+                valoratual = Number(bar.value);
+                total = memoria / valoratual;
+                bar.value = (total);
+    
+            } else if (operador === "%") {
+                let aux
+                valoratual = Number(bar.value)
+                aux = valoratual / 100;
+                total = memoria * aux;
+                bar.value = total;
+    
+            } else if (operador === "P") {
+                valoratual = Number(bar.value);
+                total = Math.pow(memoria, valoratual);
+                bar.value = (total);
+    
+            } else if (operador === "M") {
+                
+                window.alert("Operação indisponivel, aguarde as proximas atualizações.!")
+                
+            }  else if (operador === "√") {
+    
+               valoratual = Number(bar.value);
+               let dividido = 0;
+               let memoria1 = 1;
+               for (var  i = 0; i < valoratual; i++) {
+                   dividido = valoratual / memoria1;
+                   memoria1 = (dividido + memoria1) / 2;
+               }  
+                    total = memoria1;
+                    if(memoria === 0){
+                        memoria = "";
+                    } else {
+                       aux = memoria * memoria1;
+                       total = aux;
+    
+                    }
+                    bar.value = (total);
+    
+            } else if (operador === "x²") {
+                total = memoria * memoria;
+                bar.value = (total);
+            }
+            
+            histcal.value += memoria + operador + valoratual + "=" + total + "\n";
+            memoria = total;
+    
+        }
+    }
+    
+    
+    function ophist(objeto, btn) {
+        let elemento = document.getElementById(objeto);
+        let botao = document.getElementById(btn);
+    
+        if (elemento.style.display === "none") {
+            botao.style.marginRight = "-270px";
+            elemento.style.display = "block";
+            botao.value = "||<";
+        } else {
+            elemento.style.display = "none";
+            botao.style.marginRight = "-11px";
+            botao.value = "||>";
+        }
+    }
+    
+    function opcient(objeto,btn,bodyp,css1,barra,igual) {
+        let elemento = document.getElementById(objeto);
+        let botao = document.getElementById(btn);
+        let all = document.getElementById(bodyp);
+        let css = document.getElementById(css1);
+        let visor = document.getElementById(barra);
+        let ig = document.getElementById(igual);
+    
+        if (elemento.style.display === "none") {
+            elemento.style.display = "block";
+            all.style.width = "485px";
+            css.style.margin = "-254px 0 0 150px";
+            visor.style.width = "444px";
+            ig.style.margin = "0 0 0 2px";
+            ig.style.width = "445px";
+            botao.value = "||>";
+        } else {
+            elemento.style.display = "none";
+            all.style.width = "330px";
+            css.style.margin = "0";
+            visor.style.width = "290px";
+            ig.style.margin = "0";
+            ig.style.width = "289px";
+            botao.value = "||<";
+            
+        }
+    }
+    
+    
+    function operacao(op) {
+    
+        operador = op;
+        memoria = Number(bar.value);
+        bar.value = "";
+    
+    }
+    
+    function limpar() {
+        operador = "";
+        bar.value = "";
+        memoria = 0;
+    }
+    
+    function carregamento(objeto) {
+        let object = document.getElementById(objeto);
+    
+        object.style.display = "none";
+    }
+    
+    </script>
+
+</html>

@@ -1,0 +1,41 @@
+Algoritmo-> é um rascunho da lógica do programa a ser feito.
+
+-Pseudo-linguagem -> é uma liguagem "falsa" para criar uma lógica.
+-Fluxograma -> representação com figuras.
+
+     Pseudolinguagem
+
+Leia nota1, nota2, nota3
+Escreva (nota1+nota2+nota3)/3
+
+================================
+
+Receba panfletista, dados do cliente
+Receba o serviso, valor
+...
+...
+Receba formapagamento
+se cartão, dividir em até 10x
+se dinheiro, exiba valor-10%
+
+================================
+
+Fale (Olá, qual seu pedido?)
+Receba pedido
+Fale (Fritas acompanhar?)
+Receba fritas
+Fale (Quer aumentar o pedido?)
+Receba pedido
+Fale (Forma de pagamento?)
+Receba pagamento
+Envie o pedido para cozinha
+Entregue o troco
+Entregue a notaFiscal
+Fale (Volte sempre! Seu pedido será entregue em breve!)
+
+============================================================
+
+Escreva um algoritmo de um programa que receba o nome da matéria, as 3 notas e exiba
+a média do aluno.
+
+Receba Materia

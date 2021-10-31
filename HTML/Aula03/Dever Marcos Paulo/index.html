@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calandario</title>
+    <link rel="icon" href="ico.png">
+
+</head>
+
+<style>
+    #calendario {
+        border: 1px solid black;
+        border-collapse: collapse;/*remover espaço entre as celulas*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #calendario th,
+    td,
+    caption {
+        border: 1px solid rgba(218, 31, 31, 0.281);
+        padding: 0.3em;
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+       
+
+
+    }
+
+    #calendario caption {
+        background-color: rgba(240, 16, 16, 0.575);
+    }
+
+    #calendario {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #semana {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .a {    /*.a se refere aos Domingos*/
+        color: red;
+
+    }
+
+    .b {    /* .b se refere aos dias da semana*/
+        color: white;
+        background-color: black;
+    }
+
+
+    .c {    /* .c se refere a dias do proximo mês*/
+        color: rgba(0, 0, 0, 0.418);
+        background-color: rgba(128, 128, 128, 0.76);
+    }
+
+    .d{     /* .d foi criada apenas para o ultimo domingo do mês anterior*/
+        color: rgba(255, 0, 0, 0.205);
+        background-color: rgba(128, 128, 128, 0.76);
+    }
+
+    #passar_mouse {  /* foi criado para definir cor aos feriados*/
+        color: dodgerblue;
+    }
+
+    #mostrar {   
+        display:none;
+    }
+
+    #passar_mouse:hover #mostrar {    
+        display: block;
+        /*Se passar o mouse sobre os feriados eles se revelam*/ 
+    }
+    
+</style>
+
+<body>
+
+    <table id="calendario">
+        <caption>Fevereiro 2021</caption>  <!---->
+
+        <thead>
+            <tr>
+                <th class="a">D</th>
+                <th>S</th>
+                <th>T</th>
+                <th>Q</th>
+                <th>Q</th>
+                <th>S</th>
+                <th>S</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th class="d">31</th>
+                <td class="b">1</td>
+                <td class="b">2</td>
+                <td class="b">3</td>
+                <td class="b">4</td>
+                <td class="b">5</td>
+                <td class="b">6</td>
+            </tr>
+            <tr>
+                <th class="a">7</th>
+                <td class="b">8</td>
+                <td class="b">9</td>
+                <td class="b">10</td>
+                <td class="b">11</td>
+                <td class="b">12</td>
+                <td class="b">13</td>
+            </tr>
+            <tr>
+                <th class="a">14</th>
+                <td class="b">15</td>
+                <td class="b">
+                    <div id="passar_mouse">16 <div id="mostrar">Carnaval </div>
+                    </div>
+                </td>
+                <td class="b">
+                    <div id="passar_mouse"> 17<div id="mostrar"> Quarta-feira de Cinzas</div>
+                    </div>
+                </td>
+                <td class="b">18</td>
+                <td class="b">19</td>
+                <td class="b">20</td>
+            </tr>
+            <tr>
+                <th class="a">21</th>
+                <td class="b">22</td>
+                <td class="b">23</td>
+                <td class="b">24</td>
+                <td class="b">25</td>
+                <td class="b">26</td>
+                <td class="b">27</td>
+            </tr>
+            <tr>
+                <th class="a">28</th>
+                <td class="c">1</td>
+                <td class="c">2</td>
+                <td class="c">3</td>
+                <td class="c">4</td>
+                <td class="c">5</td>
+                <td class="c">6</td>
+            </tr>
+        </tbody>
+
+        <tfoot></tfoot>
+
+    </table>
+
+</body>
+
+</html>

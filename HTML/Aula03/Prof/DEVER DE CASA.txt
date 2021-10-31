@@ -1,0 +1,14 @@
+DEVER DE CASA
+
+crie um página como caledário do mês de fevereiro de 2021, 
+o título (FEVEREIRO DE 2021) deverá estar na primeira linha DENTRO da tabela.
+
+use classe para definir aparência dos domingos e feriados.
+formate para que os dias da semana apareçam com fundo preto e letras brancas.
+
+Bônus -> centralize os números dentro das células.
+Formate o calendário para que tenha uma boa aparência.
+
+w3schools.org
+devmedia.com
+

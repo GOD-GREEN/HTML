@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsnipp form</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css" type="text/css"/>
+</head>
+<body>
+    <div id="form">
+        <form class="form-horizontal">
+            <fieldset> 
+            <!--o fieldset coloca uma linha (box) ao redor dos campos-->
+            
+            <!-- Form Name -->
+            <legend>Cadastra Veículos</legend>
+            <!--Dá um nome ao fieldset-->
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="modelo">Modelo</label>  
+              <div class="col-md-4">
+              <input id="modelo" name="modelo" type="text" placeholder="Digite o modelo desejado" class="form-control input-md" required="">
+              </div>
+            </div>
+            
+            <!-- Prepended text-->
+            <div class="form-group fundopreto">
+              <label class="col-md-4 control-label" for="usertweeter">Tweeter:</label>
+              <div class="col-md-4">
+                <div class="input-group">
+                  <span class="input-group-addon">@</span>
+                  <input id="usertweeter" name="usertweeter" class="form-control" placeholder="seunome" type="text">
+                </div>
+                
+              </div>
+            </div>
+            
+            <!-- Appended Input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="email">E-mail:</label>
+              <div class="col-md-4">
+                <div class="input-group">
+                  <input id="email" name="email" class="form-control" placeholder="usuario" type="text">
+                  <span class="input-group-addon">@itstep.org</span>
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="comment">Comentários</label>
+              <div class="col-md-4">                     
+                <textarea class="form-control" id="comment" name="comment"
+                rows="5" cols="20" maxlength="200" style="resize: none;"></textarea>
+              </div>
+            </div>
+            
+            <!-- Multiple Checkboxes -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="recebinfo">Receber Informações</label>
+              <div class="col-md-4">
+              <div class="checkbox">
+                <label for="recebinfo-0">
+                  <input type="checkbox" name="recebinfo" id="recebinfo-0" value="email">
+                  E-mail
+                </label>
+                </div>
+              <div class="checkbox">
+                <label for="recebinfo-1">
+                  <input type="checkbox" name="recebinfo" id="recebinfo-1" value="sms">
+                  SMS
+                </label>
+                </div>
+              <div class="checkbox">
+                <label for="recebinfo-2">
+                  <input type="checkbox" name="recebinfo" id="recebinfo-2" value="zap">
+                  WhatsApp
+                </label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Multiple Radios -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="modo">Aulas</label>
+              <div class="col-md-4">
+              <div class="radio">
+                <label for="modo-0">
+                  <input type="radio" name="modo" id="modo-0" value="p" checked="checked">
+                  Presencial
+                </label>
+                </div>
+              <div class="radio">
+                <label for="modo-1">
+                  <input type="radio" name="modo" id="modo-1" value="o">
+                  On-line
+                </label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Select Multiple -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="materias">Matérias</label>
+              <div class="col-md-4">
+                <select id="materias" name="materias" class="form-control" multiple="multiple">
+                  <option value="java">Java SE</option>
+                  <option value="jweb">Java EE</option>
+                  <option value="html">HTML</option>
+                </select>
+              </div>
+            </div>
+            
+            <!-- Select Basic -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
+              <div class="col-md-4">
+                <select id="selectbasic" name="selectbasic" class="form-control">
+                  <option value="1">Option one</option>
+                  <option value="2">Option two</option>
+                </select>
+              </div>
+            </div>
+            
+            </fieldset>
+            </form>
+            
+    </div>
+</body>
+</html>

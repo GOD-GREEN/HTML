@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(137, 247, 255);
+    background-image: linear-gradient(to bottom right, rgb(241, 139, 22), rgb(92, 92, 92));
+}
+header{
+    width: 100%;
+    height: 100px;
+    padding-bottom: 10px;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+#divForm{
+    margin: 0 auto;
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    height: 500px;
+    width: 448px;
+    background-color: rgba(255, 255, 255, 0.452);
+}
+h2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.labels{
+    width: 100px;
+    margin-left: 45px;
+    float: left;
+}
+.inputs{
+    padding-bottom: 5px;
+    float: left;
+    margin-right: 20px;
+}
+#form{
+    padding-top: 10px;
+    margin: auto;
+    width: 368px;
+    height: 377px;
+}
+#buttons{
+    padding-top: 136px;
+    float: left;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to bottom right, rgb(61, 60, 60), rgb(92, 92, 92));
+}
