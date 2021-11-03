@@ -2,6 +2,7 @@ body{
     width: 1440px;
     margin: 0 auto;
     border: 1px solid gray;
+
 }
 
 
@@ -101,11 +102,46 @@ a:hover{
 
 /*############# Section #################*/
 
+.login1{
+    padding-top: 50px;
+    width: 530px;
+}
+a:visited{border: #e7e7e7;}
+.esq:link{color: black;}
+.esq:visited{color: black;}
 
+.register{
+    margin-left: 100px;
+    margin-top: 40px;
+    position:absolute;
+}
+
+.login1{
+    
+    display: inline-block;
+}
+
+.sign-in{
+    margin-top: 40px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+#digiteSeuCPF, #digiteSuaSenha{
+    width: 425px;
+}
+
+.bar{
+    height: 511px !important;
+    margin: 48px 0 127px 190px;
+    border-right: 10px solid gray;
+    
+}
 
 #banner{
     height: 350px; 
 }
+
 
 .banner1{
     width: 100%;
@@ -114,7 +150,6 @@ a:hover{
 
 #participar{
     background-color: white;
-    text-align: center;
     padding-top: 50px;
 }
 
@@ -126,9 +161,12 @@ a:hover{
 
 .header{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    padding-bottom: 50px;
+    font-weight: 500;
+    padding-bottom: 0px;
     font-size: 24pt;
+    text-align: center;
+    padding-top: 90px;
+    
 }
 
 #text{
@@ -144,10 +182,11 @@ a:hover{
     font-weight: 600;
     font-size: 14pt;
     margin-bottom: -25px;
+    text-align: center;
 }
 
 .send{
-    width: 300px;
+    width: 425px;
     height: 50px;
     margin: 10px auto;
     background-color: #6B3CB1;
@@ -182,11 +221,30 @@ a:hover{
 }
 
 
+.esqueceu{
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding-bottom: 15px;
+    float: right;
+    text-decoration: underline black;
+    
+}
+.g-recaptcha{
+    padding: 36px 0 30px 45px;
+}
+
+
+
+
 /*############# Footer ##################*/
 
 
 
 footer{
+    float: left;
+    width: 100%;
+    position:static;
     bottom: 0;
 }
 
