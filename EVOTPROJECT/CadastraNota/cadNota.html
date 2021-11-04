@@ -38,9 +38,9 @@
             <img src="../IMG/Nota.png">
         </div>
         <div class=" cadNota container px-5 my-5">
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form name="form" id="contactForm" data-sb-form-api-token="API_TOKEN">
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="digiteSeuCPF" type="text" placeholder="Digite seu CPF"
+                    <input class="form-control" id="dataNota" type="text" placeholder="Digite seu CPF"
                         data-sb-validations="required" />
                     <label for="newField3">Data da nota</label>
                     <div class="invalid-feedback" data-sb-feedback="newField3:required">New Field 3 is required.
@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="digiteSeuCPF" type="text" placeholder="Digite seu CPF"
+                    <input class="form-control" id="COONota" type="text" placeholder="Digite seu CPF"
                         data-sb-validations="required" />
                     <label for="newField3">COO da nota</label>
                     <div class="invalid-feedback" data-sb-feedback="newField3:required">New Field 3 is required.
@@ -56,14 +56,14 @@
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="digiteSeuCPF" type="text" placeholder="Digite seu CPF"
+                    <input class="form-control" id="CNPJNota" type="text" placeholder="Digite seu CPF"
                         data-sb-validations="required" />
                     <label for="newField3">Digite CNPJ</label>
                     <div class="invalid-feedback" data-sb-feedback="newField3:required">New Field 3 is required.
                     </div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="digiteSeuCPF" type="text" placeholder="Digite seu CPF"
+                    <input class="form-control" id="valorNota" type="text" placeholder="Digite seu CPF"
                         data-sb-validations="required" />
                     <label for="newField3">Valor total da nota</label>
                     <div class="invalid-feedback" data-sb-feedback="newField3:required">New Field 3 is required.
@@ -74,7 +74,7 @@
         </form>
 
         <div class="d-grid">
-            <button class="send btn-lg disabled" id="submitButton" onclick="menuCadastrar()"
+            <button class="send btn-lg disabled" id="submitButton" onclick="cadastraNota()"
                 type="button">CADASTRAR</button>
         </div>
 </div>
