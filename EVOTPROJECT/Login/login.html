@@ -44,14 +44,14 @@
                 <div class="container px-5 my-5">
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="digiteSeuCPF" type="text" placeholder="Digite seu CPF"
+                            <input class="form-control" id="entrarSeuCPF" type="text" placeholder="Digite seu CPF"
                                 data-sb-validations="required" />
                             <label for="newField3">Digite seu CPF</label>
                             <div class="invalid-feedback" data-sb-feedback="newField3:required">New Field 3 is required.
                             </div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="digiteSuaSenha" type="text" placeholder="Digite sua senha"
+                            <input class="form-control" id="entrarSuaSenha" type="password" placeholder="Digite sua senha"
                                 data-sb-validations="required" />
                             <label for="digiteSuaSenha">Digite sua senha</label>
                             <div class="invalid-feedback" data-sb-feedback="digiteSuaSenha:required">Digite sua senha is
@@ -65,7 +65,7 @@
                         </div>
                         <div class="g-recaptcha" data-sitekey="|*SEU-SITE-KEY*|"></div>
                         <div class="d-grid">
-                            <button class="send btn-lg disabled" id="submitButton" type="submit">ENTRAR</button>
+                            <button class="send btn-lg disabled" id="submitButton" onclick="login()">ENTRAR</button>
                         </div>
 
                 </div>
@@ -81,7 +81,7 @@
                 <div class="container px-5 my-5">
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="digiteSeuCPF" type="text" placeholder="Digite seu CPF"
+                            <input class="form-control" id="registrarSeuCPF" type="text" placeholder="Digite seu CPF"
                                 data-sb-validations="required" />
                             <label for="newField3">Digite seu CPF</label>
                             <div class="invalid-feedback" data-sb-feedback="newField3:required">New Field 3 is required.

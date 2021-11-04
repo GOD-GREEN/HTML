@@ -8,7 +8,7 @@ body{
 /*############## Header ##################*/
 
 
-#principal{
+#principal{/*background principla*/
     background-color: #E5E5E5;
 }
 
@@ -94,9 +94,9 @@ a:hover{
     background-color: #04AA6D;
   }
 
-  
 
-/*############# Section #################*/
+
+/*############# ProgressBar ##############*/
 .step{
     margin-top: 120px;
     font-family: 'Montserrat', sans-serif;
@@ -195,16 +195,9 @@ a:hover{
     left: calc(50% - 20px);
     z-index: 99;
 
-    
-
 }
 
-/*#################### IMPORTAR PARA JS####################*/
-.dont{
-    margin-top: 85px;
-}
 
-/*#########################################################*/
 .progressbar li{
     position: relative;
     color: var(--dark-gray);
@@ -212,10 +205,6 @@ a:hover{
     text-align: center;
 
     background-color: #E5E5E5;
-
-    
-
-    
    
 }
 
@@ -233,8 +222,54 @@ a:hover{
 .cad{
     margin-left: 50px;
 }
+
+
+
+/*#################### IMPORTAR PARA JS####################*/
+.dont{
+    margin-top: 85px;
+}
+
+/*#########################################################*/
+
+/*############# Section #################*/
+
+
+#cadEmail{width: 1300px !important;}
+
+#cadTell{width: 645px !important;}
+
+#cadCPF{width: 425px !important;}
+
+#cadNasc{width: 425px !important;}
+
+#cadRG{width: 430px !important;}
+
+#cadNome{width: 1290px !important;}
+
+
+#cadTell0{
+    width: 645px !important;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.input-group{
+    width: 1300px;
+    margin-left: -48px !important;
+}
+
+.contactForm{
+    width: 1300px !important;
+    float: left !important;
+}
+
+.back{
+    margin-right: 10px !important;
+}
+
+
 .line{
-    
     border: 5px solid black;
 }
 .part{
@@ -248,12 +283,12 @@ a:hover{
 }
 
 .input{
-    margin: 0 auto;
-    width: 600px;
+    width: 430px;
     height: 50px;
+    
 }
 
-.header{
+.header{/*Texto principal*/
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     padding-bottom: 100px;
@@ -261,14 +296,14 @@ a:hover{
 }
 
 #text{
-    margin: 0 auto;
-    padding-top: 100px;
-    height: 354px;
-    width: 811px;
-    text-align: center;
+    padding-left: 10px;
+    padding-top: 20px;
+    height: 10px;
+    width: 250px;
 }
 
 .text00{
+    padding-left: 50px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 14pt;
@@ -276,9 +311,10 @@ a:hover{
 }
 
 .send{
-    width: 300px;
-    height: 50px;
-    margin: 10px auto;
+    margin: 214px -35px 0 0;
+    width: 200px;
+    height: 60px;
+    float: right;
     background-color: #6B3CB1;
     color: aliceblue;
     border: none;

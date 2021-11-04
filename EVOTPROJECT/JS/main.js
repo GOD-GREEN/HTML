@@ -1,12 +1,23 @@
+
 function login(){
 
 }
 
-function menuCadastra(){
-
+function next(){
+    document.getElementById('dadosPessoais').style = "display: none;"
+    document.getElementById('contato').style = "display: block;"
+    document.getElementById('back').style = "display: block;"
 }
 
+function back(){
+    document.getElementById('dadosPessoais').style = "display: block;"
+    document.getElementById('contato').style = "display: none;"
+    document.getElementById('back').style = "display: none;"
+}
 
+function nextEnd(){
+    
+}
 
 function cadastraNota(){
     var data  =  document.getElementById('dataNota');
@@ -41,9 +52,8 @@ function cadastraNota(){
 
 //############# CADASTRAR/LOGIN #####################//
 
-function Cadastrar(){
-    var CPF = document.getElementById('digiteSeuEMailOuCpf').value;
-    
+function menuCadastrar(){
+    var CPF = document.getElementById('registrarSeuCPF');
     
     var dados = JSON.parse(localStorage.getItem("dadosUsuario"));
 
@@ -52,12 +62,26 @@ function Cadastrar(){
         dados = [];
     }
     
-    var auxRegistro = {
-        nome: Usuario.value,
-        senha: Senha.value
-    }
+    var auxRegistro = [
+        CPFuser = CPF.value
 
-    dados.push(auxRegistro);
+    ]
+
+    dados = auxRegistro;
 
     localStorage.setItem("dadosUsuario", JSON.stringify(dados));
+
+    window.location.href = "../CadastroUsuario/cadastroUsuario.html"
+
+
+}
+
+function carregarDados(){
+
+    console.log("Rodou")
+
+    cadUser = document.getElementById('cadasUser');
+
+    cadUser.value = JSON.parse(localStorage.getItem("dadosUsuario"));
+
 }
