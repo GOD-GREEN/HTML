@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"> 
     <!--Folhas de Stylus -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/stylus.css">
+    <link rel="stylesheet" href="../CSS/cadNota.css">
     <link rel="shortcut icon" href="../IMG/favicon.png">
     <script src="../JS/main.js"></script>
 
@@ -24,27 +24,63 @@
     </div>
 
     <div class="topnav">
-        <li><a href="./login.html">Login <br /> &emsp;</a></li>
-        <li><a class="midle" href="../CadastraNota/cadNota.html">Cadastrar <br /> Nota Fiscal <br></a></li>
-        <li><a class="Home" href="../index.html">Home <br /> &emsp;</a></li>
+        <li><a href="../index.html"><img src="../IMG/Exit.png"></a></li>
+        
     </div>
 </header>
 <section id="principal">
-    <div id="banner"> 
-        <img class="banner1" src="./IMG/banner1.png">
-    </div>
-    <div id="participar">
-        <h2 class="header">VEJA COMO PARTOCIPAR</h2>
-
-        <div class="comoParticipar">
-            <div class="part"><div class="stat">1</div> <br> <br> FAÇA SEU CADASTRO</div>
-            <div class="part"><div class="stat">2</div> <br> <br> CADASTRE SUAS NOTAS</div>
-            <div class="part"><div class="stat">3</div> <br> <br> PRONTO! <br>Você já está concorrendo <br>com o número da sorte <br>gerado</div>
-        </div>
-
-        
-    </div>
     
+    <div id="enviarNota">
+        <h2 class="header">ENVIAR NOTA FISCAL</h2>
+        <h5 class="text00">Cadastro manual somente para clientes que não informaram o CPF no caixa.</h5>
+    
+        <div class="nota">
+            <img src="../IMG/Nota.png">
+        </div>
+        <div class=" cadNota container px-5 my-5">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="digiteSeuCPF" type="text" placeholder="Digite seu CPF"
+                        data-sb-validations="required" />
+                    <label for="newField3">Data da nota</label>
+                    <div class="invalid-feedback" data-sb-feedback="newField3:required">New Field 3 is required.
+                    </div>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="digiteSeuCPF" type="text" placeholder="Digite seu CPF"
+                        data-sb-validations="required" />
+                    <label for="newField3">COO da nota</label>
+                    <div class="invalid-feedback" data-sb-feedback="newField3:required">New Field 3 is required.
+                    </div>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="digiteSeuCPF" type="text" placeholder="Digite seu CPF"
+                        data-sb-validations="required" />
+                    <label for="newField3">Digite CNPJ</label>
+                    <div class="invalid-feedback" data-sb-feedback="newField3:required">New Field 3 is required.
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="digiteSeuCPF" type="text" placeholder="Digite seu CPF"
+                        data-sb-validations="required" />
+                    <label for="newField3">Valor total da nota</label>
+                    <div class="invalid-feedback" data-sb-feedback="newField3:required">New Field 3 is required.
+                    </div>
+                </div>
+
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        </form>
+
+        <div class="d-grid">
+            <button class="send btn-lg disabled" id="submitButton" onclick="menuCadastrar()"
+                type="button">CADASTRAR</button>
+        </div>
+</div>
+    </div>
+    </div>
+   
 </section>
 <footer>
 <div id="rodape">

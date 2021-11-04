@@ -48,7 +48,7 @@
          <h5 class="text00">DADOS PESSOAIS: </h5>
                 
         <div class="container px-5 my-5">
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form name="form" id="contactForm" data-sb-form-api-token="API_TOKEN">
                 <div class="form-floating mb-3 input">
                     <input class="form-control" id="digiteSeuEMailOuCpf" type="email" placeholder="Digite seu e-mail ou CPF" data-sb-validations="required,email" />
                     <label for="digiteSeuEMailOuCpf">Digite seu e-mail ou CPF</label>
@@ -60,7 +60,7 @@
                     
                 </div>
             </form>
-            <button class="btn-lg disabled send" id="submitButton" onclick="next('digiteSeuEMailOuCpf')">AVANÇAR</button>
+            <button class="btn-lg disabled send" id="submitButton" onclick="next()">AVANÇAR</button>
         </div>
         
     </div>
