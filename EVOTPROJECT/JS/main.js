@@ -1,22 +1,38 @@
 
+
+function limpar(){
+    document.getElementById('contato').style = "display: none;"
+    document.getElementById('back').style = "display: none;"
+    document.getElementById('dadosPessoais').style = "display: none;"
+    document.getElementById('endereco').style = "display: none;"
+}
+
 function login(){
 
 }
 
 function next(){
-    document.getElementById('dadosPessoais').style = "display: none;"
+    limpar()
     document.getElementById('contato').style = "display: block;"
     document.getElementById('back').style = "display: block;"
 }
 
 function back(){
+    limpar()
     document.getElementById('dadosPessoais').style = "display: block;"
-    document.getElementById('contato').style = "display: none;"
-    document.getElementById('back').style = "display: none;"
+    
+}
+
+function backCont(){
+    limpar()
+    document.getElementById('contato').style = "display: block;"
+    document.getElementById('back').style = "display: block;"
 }
 
 function nextEnd(){
-    
+    limpar();
+    document.getElementById('endereco').style = "display: block;"
+    document.getElementById('backCont').style = "display: block;"
 }
 
 function cadastraNota(){

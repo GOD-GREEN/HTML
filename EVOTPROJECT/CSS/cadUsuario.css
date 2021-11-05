@@ -212,6 +212,7 @@ a:hover{
     --dark-gray: #7A7A7A;
     --ligth-gray: #DADADA;
     --purple: #6B3CB1;
+
 }
 
 .cad{
@@ -235,9 +236,8 @@ a:hover{
 /*############# Section #################*/
 
 
-#cadEmail{width: 1300px !important;}
 
-#cadTell{width: 645px !important;}
+/*########## DADOS PESSOAIS ###*/
 
 #cadCPF{width: 425px !important;}
 
@@ -247,6 +247,41 @@ a:hover{
 
 #cadNome{width: 1290px !important;}
 
+/*############ ENDEREÇO #####*/
+
+#CEP{width: 240px !important;}
+
+#Logadouro{width: 645px !important;}
+
+#Numero{width: 235px !important;}
+
+#Complemento{width: 400px !important;}
+
+#Bairro{width: 425px !important;}
+
+#Cidade{width: 425px !important;}
+
+#UF{width: 430px !important;}
+
+.num{
+    margin-right: 5px !important;
+}
+
+.buscar{
+    width: 150px !important;
+    height: 50px !important;
+    margin: 3px 900px 0 10px!important;
+    border-radius: 5% !important;
+}
+
+
+
+
+/*########## CONTATO ####*/
+
+#cadEmail{width: 1300px !important;}
+
+#cadTell{width: 645px !important;}
 
 #cadTell0{
     width: 645px !important;
@@ -311,7 +346,8 @@ a:hover{
 }
 
 .send{
-    margin: 214px -35px 0 0;
+    bottom: 0;
+    margin: 127px -35px 0px 0px;
     width: 200px;
     height: 60px;
     float: right;

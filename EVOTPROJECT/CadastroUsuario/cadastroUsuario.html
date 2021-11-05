@@ -42,15 +42,18 @@
                     <li class="active" data-step="1" bar="" step="1">
                         <div class="step"> DADOS PESSOAIS</div>
                     </li>
-                    <li step="2" data-step="2">
+                    <li class="inative" step="2" data-step="2">
                         <div class="step dont"> CONTATO </div>
                     </li>
-                    <li step="3" data-step="3">
+
+                    <li class="inative" step="3" data-step="3">
                         <div class="step dont"> ENDEREÇO </div>
                     </li>
-                    <li step="4" data-step="4">
+
+                    <li class="inative" step="4" data-step="4">
                         <div class="step dont"> SENHA </div>
                     </li>
+                
                 </ul>
             </div>
 
@@ -123,6 +126,69 @@
                         </form>
                         <button class="btn-lg disabled send" id="next" onclick="nextEnd()">AVANÇAR</button>
                         <button class="btn-lg disabled send back" id="back" onclick="back()">VOLTAR</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="endereco" style="display: none;">
+                <div id="text">
+                    <h5 class="text00">DADOS PESSOAIS: </h5>
+                </div>
+                <div class="formu">
+                    <div class="container px-5 my-5">
+                        <form name="form" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <div class="input-group">
+                              
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="CEP" type="text"
+                                        placeholder="Digite seu telefone principal" data-sb-validations="required,email" />
+                                    <label for="digiteSeuEMailOuCpf">Digite seu CEP</label>
+                                </div>
+
+                                <button class="btn-lg disabled send buscar" id="busca" onclick="busca()">BUSCAR</button>
+                                <br>
+                                <div class="form-floating mb-3 num">
+                                    <input class="form-control" id="Logadouro" type="text"
+                                        placeholder="Digite seu telefone de recado - NÃO OBRIGATÓRIO" />
+                                    <label for="digiteSeuEMailOuCpf">&emsp;Logadouro</label>
+                                </div>
+
+                                <div class="form-floating mb-3 num">
+                                    <input class="form-control" id="Numero" type="text"
+                                        placeholder="Digite seu telefone de recado - NÃO OBRIGATÓRIO" />
+                                    <label for="digiteSeuEMailOuCpf">&emsp;Número</label>
+                                </div>
+
+                                <div class="form-floating mb-3 num">
+                                    <input class="form-control" id="Complemento" type="text"
+                                        placeholder="Digite seu telefone de recado - NÃO OBRIGATÓRIO" />
+                                    <label for="digiteSeuEMailOuCpf">&emsp;Complemento</label>
+                                </div>
+
+                                <div class="form-floating mb-3 num">
+                                    <input class="form-control" id="Bairro" type="text"
+                                        placeholder="Digite seu telefone de recado - NÃO OBRIGATÓRIO" />
+                                    <label for="digiteSeuEMailOuCpf">&emsp;Bairro</label>
+                                </div>
+
+                                <div class="form-floating mb-3 num">
+                                    <input class="form-control" id="Cidade" type="text"
+                                        placeholder="Digite seu telefone de recado - NÃO OBRIGATÓRIO" />
+                                    <label for="digiteSeuEMailOuCpf">&emsp;Cidade</label>
+                                </div>
+                             
+                                <div class="form-floating mb-3 num">
+                                    <input class="form-control" id="UF" type="text" placeholder="Digite seu e-mail"
+                                        data-sb-validations="required,email" />
+                                    <label for="digiteSeuEMailOuCpf">UF</label>
+                                </div>
+
+                            </div>
+                        </form>
+                        <button class="btn-lg disabled send" id="next" onclick="nextPass()">AVANÇAR</button>
+                        <button class="btn-lg disabled send back" id="back" onclick="backCont()">VOLTAR</button>
                     </div>
 
 
