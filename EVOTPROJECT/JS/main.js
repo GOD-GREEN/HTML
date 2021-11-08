@@ -113,7 +113,7 @@ function sendEmail() {
 
 /*############# PDF VIEW ######################*/
 
-function view(){
+function view() {
     window.open("../IMG/8.pdf", "_blank");
     window.location.href = "../RedefinirSenha/Sucesso.html";
 }
@@ -218,92 +218,101 @@ function finalizar() {
     let Pass = document.getElementById('pass');
     let Comfirm = document.getElementById('confirmarSenha');
 
-    if (Pass.value != Comfirm.value) {
-        verify = false;
-        alert("As senhas não são iguais");
-    }else{
+    let Regulamento = document.getElementById('liEAceitoOUrlRegulamento');
+    let Termos = document.getElementById('termosDeUso');
 
-    function dadosPessoais () {
-        let CPF = document.getElementById('cadCPF');
-        let Nasc = document.getElementById('cadNasc');
-        let RG = document.getElementById('cadRG');
-        let Nome = document.getElementById('cadNome');
+    
+        if (Regulamento.checked != true || Termos.checked != true) {
+            alert("Você Precisa aceitar os Termos")
+            verify = false;
+        }
+        if (Pass.value != Comfirm.value) {
+            verify = false;
+            alert("As senhas não são iguais");
+            
+        }
+
+        function dadosPessoais() {
+            let CPF = document.getElementById('cadCPF');
+            let Nasc = document.getElementById('cadNasc');
+            let RG = document.getElementById('cadRG');
+            let Nome = document.getElementById('cadNome');
 
             localStorage.setItem('CPF', `${CPF.value}`);
             localStorage.setItem('Nasc', `${Nasc.value}`);
             localStorage.setItem('RG', `${RG.value}`);
             localStorage.setItem('Nome', `${Nome.value}`);
 
-    }
-
-    class contato {
-        Email = document.getElementById('cadEmail');
-        Tell_0 = document.getElementById('cadTell');
-        Tell_1 = document.getElementById('cadTell0');
-
-        constructor(Email, Tell_0, Tell_1) {
-            this.Email = Email;
-            this.Tell_0 = Tell_0;
-            this.Tell_1 = Tell_1;
         }
-        contatoUser() {
-            localStorage.setItem('Email', `${this.Email.value}`);
-            localStorage.setItem('Tell_0', `${this.Tell_0.value}`);
-            localStorage.setItem('Tell_1', `${this.Tell_1.value}`);
+
+        class contato {
+            Email = document.getElementById('cadEmail');
+            Tell_0 = document.getElementById('cadTell');
+            Tell_1 = document.getElementById('cadTell0');
+
+            constructor(Email, Tell_0, Tell_1) {
+                this.Email = Email;
+                this.Tell_0 = Tell_0;
+                this.Tell_1 = Tell_1;
+            }
+            contatoUser() {
+                localStorage.setItem('Email', `${this.Email.value}`);
+                localStorage.setItem('Tell_0', `${this.Tell_0.value}`);
+                localStorage.setItem('Tell_1', `${this.Tell_1.value}`);
+            }
         }
-    }
 
-    class endereco {
-        CEP = document.getElementById('CEP');
-        Logra = document.getElementById('Logradouro');
-        Num = document.getElementById('Numero');
-        Comp = document.getElementById('Complemento');
-        Bairro = document.getElementById('Bairro');
-        Cidade = document.getElementById('Cidade');
-        UF = document.getElementById('UF');
+        class endereco {
+            CEP = document.getElementById('CEP');
+            Logra = document.getElementById('Logradouro');
+            Num = document.getElementById('Numero');
+            Comp = document.getElementById('Complemento');
+            Bairro = document.getElementById('Bairro');
+            Cidade = document.getElementById('Cidade');
+            UF = document.getElementById('UF');
 
-        constructor(CEP, Logra, Num, Comp, Bairro, Cidade, UF) {
-            this.CEP = CEP;
-            this.Logra = Logra;
-            this.Num = Num;
-            this.Comp = Comp;
-            this.Bairro = Bairro;
-            this.Cidade = Cidade;
-            this.UF = UF;
+            constructor(CEP, Logra, Num, Comp, Bairro, Cidade, UF) {
+                this.CEP = CEP;
+                this.Logra = Logra;
+                this.Num = Num;
+                this.Comp = Comp;
+                this.Bairro = Bairro;
+                this.Cidade = Cidade;
+                this.UF = UF;
+
+            }
+            End_User() {
+                localStorage.setItem('CEP', `${this.CEP.value}`);
+                localStorage.setItem('Logra', `${this.Logra.value}`);
+                localStorage.setItem('Num', `${this.Num.value}`);
+                localStorage.setItem('Comp', `${this.Comp.value}`);
+                localStorage.setItem('Bairro', `${this.Bairro.value}`);
+                localStorage.setItem('Cidade', `${this.Cidade.value}`);
+                localStorage.setItem('UF', `${this.UF.value}`);
+            }
+        }
+
+
+        function Senha() {
+
+            Password = Pass;
+
+            localStorage.setItem('Pass', `${Pass.value}`);
 
         }
-        End_User() {
-            localStorage.setItem('CEP', `${this.CEP.value}`);
-            localStorage.setItem('Logra', `${this.Logra.value}`);
-            localStorage.setItem('Num', `${this.Num.value}`);
-            localStorage.setItem('Comp', `${this.Comp.value}`);
-            localStorage.setItem('Bairro', `${this.Bairro.value}`);
-            localStorage.setItem('Cidade', `${this.Cidade.value}`);
-            localStorage.setItem('UF', `${this.UF.value}`);
-        }
-    }
 
+        Senha()
+        dadosPessoais()
 
-    function Senha() {
-        
-        Password = Pass;
-
-            localStorage.setItem('Pass', `${Pass.value}`);        
-        
-    }
-
-Senha()
-dadosPessoais()
-
-    //localStorage.setItem()
-
+        //localStorage.setItem()
+    if(verify != false){
         window.location.href = '../CadastroConcluido/cadConcluido.html';
     }
 }
 
 /*######### GET USERNAME ##################*/
 
-function getUsername(){
+function getUsername() {
     document.getElementById('.User').innerText = localStorage.getItem('Nome');
 }
 
