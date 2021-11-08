@@ -10,7 +10,6 @@ body{
 
 #principal{
     background-color: #E5E5E5;
-    margin-top: 2px;
 }
 
 #cabecalho{
@@ -36,22 +35,13 @@ body{
 /*############# NavBar ##################*/
 
 
-
-.midle{
-    margin-top: -35px;
-    padding-bottom: 40px;
-}
-
 a{
     border-left:1px solid white;
     border-right:1px solid white;
     margin-top: 0px;
     text-align: center;
 }
-a:hover{
-    border-left:1px solid #E5E5E5;
-    border-right:1px solid #E5E5E5;
-}
+
 ul {
     
     list-style-type: none;
@@ -89,7 +79,7 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin-top: -30px;
-    margin-right: 100px;
+    
   }
   
   li a.active {
@@ -103,6 +93,8 @@ a:hover{
 /*############# Section #################*/
 
 
+input{width: 425px;}
+.send{width: 425px !important;}
 
 #banner{
     height: 350px; 
@@ -113,10 +105,11 @@ a:hover{
     height: 100%;
 }
 
-#participar{
-    background-color: white;
+#enviarNota{
+    height: 759px;
+    background-color: #E5E5E5;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 85px;
 }
 
 .input{
@@ -128,8 +121,7 @@ a:hover{
 .header{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    padding-bottom: 50px;
-    font-size: 24pt;
+    font-size: 26pt;
 }
 
 #text{
@@ -143,18 +135,26 @@ a:hover{
 .text00{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 14pt;
-    margin-bottom: -25px;
+    font-size: 26pt;
+    
+}
+
+.text01{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+    
 }
 
 .send{
-    width: 300px;
-    height: 50px;
+    width: 300px !important;
+    height: 80px;
     margin: 10px auto;
     background-color: #6B3CB1;
     color: aliceblue;
     border: none;
     box-shadow: black 0.5px 0.5px 0.1px;
+    
 }
 .comoParticipar{
     padding-bottom: 250px;

@@ -43,6 +43,8 @@ body{
 }
 
 a{
+    border-left:1px solid white;
+    border-right:1px solid white;
     margin-top: 0px;
     text-align: center;
 }
@@ -97,14 +99,13 @@ a:hover{
 
 
 
-
 /*############# Section #################*/
 
 .login1{
     padding-top: 50px;
     width: 530px;
 }
-a:visited{border: #e7e7e7;}
+
 .esq:link{color: black;}
 .esq:visited{color: black;}
 

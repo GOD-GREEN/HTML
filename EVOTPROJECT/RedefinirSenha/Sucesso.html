@@ -39,11 +39,10 @@
 <section id="principal">
     <div id="banner"> 
         <div id="text">
-         <h2 class="header">REDEFINIÇÃO DE SENHA</h2>
-         <h5 class="text00">Digite seu email e enviaremos instruções para que você possa entrar novamente.</h5>
+         <h2 class="headr">REDEFINIÇÃO DE SENHA</h2>
                 
         <div class="container px-5 my-5">
-            <form id="contactForme" method="POST" >
+            <form id="contactForme" method="POST" style="margin-top: 60px;" >
                 <div class="form-floating mb-3 input">
                     <input class="form-control" name="email" id="Mails" type="email" placeholder="Digite seu e-mail ou CPF" data-sb-validations="required,email" />
                     <label for="email">Digite seu e-mail ou CPF</label>
@@ -51,7 +50,7 @@
             </form>
 
             <div class="d-grid">
-                <button class="btn-lg disabled send" id="SendMail" onclick="sendEmail()">ENVIAR</button>
+                <button class="btn-lg disabled send" style="width: 200px;" id="SendMail" onclick="alert('Um email foi enviado com a nova senha!')">ENVIAR</button>
             </div>
         </div>
         

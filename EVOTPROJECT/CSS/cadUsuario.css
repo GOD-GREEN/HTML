@@ -10,6 +10,7 @@ body{
 
 #principal{/*background principla*/
     background-color: #E5E5E5;
+    margin-top: 2px;
 }
 
 #cabecalho{
@@ -33,6 +34,8 @@ body{
 
 
 /*############# NavBar ##################*/
+
+
 
 .midle{
     margin-top: -35px;
@@ -93,7 +96,6 @@ a:hover{
     color: white;
     background-color: #04AA6D;
   }
-
 
 
 /*############# ProgressBar ##############*/
@@ -251,7 +253,7 @@ a:hover{
 
 #CEP{width: 240px !important;}
 
-#Logadouro{width: 645px !important;}
+#Logradouro{width: 645px !important;}
 
 #Numero{width: 235px !important;}
 
@@ -299,9 +301,6 @@ a:hover{
     float: left !important;
 }
 
-.back{
-    margin-right: 10px !important;
-}
 
 
 .line{
@@ -345,9 +344,41 @@ a:hover{
     margin-bottom: -25px;
 }
 
+.text01{
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+    margin-bottom: -25px;
+}
+
+
+.text02:enabled{
+    background-color: #6B3CB1;
+    border: #E5E5E5;
+}
+
+.text02{
+    padding: 10px 20px;
+    margin-left: -40px !important;
+    margin-bottom: -25px;
+    background-color: white;
+}
+
+
+#finalizar{
+    float: right;
+}
+
+.back{
+    
+    margin-right: 300px !important;
+    display: none;
+}
+
 .send{
     bottom: 0;
-    margin: 127px -35px 0px 0px;
+    margin: -150px 90px 0px 0px;
     width: 200px;
     height: 60px;
     float: right;
@@ -357,6 +388,22 @@ a:hover{
     box-shadow: black 0.5px 0.5px 0.1px;
 }
 
+/*###### SENHA ####*/
+
+.regulamento{
+    border: none;
+    text-decoration: none;
+    color: #6B3CB1;
+
+}
+
+.box{
+    margin-left: -95px;   
+}
+
+.password{
+    width: 240px;
+}
 
 
 

@@ -56,13 +56,10 @@
                             <label for="digiteSuaSenha">Digite sua senha</label>
                             <div class="invalid-feedback" data-sb-feedback="digiteSuaSenha:required">Digite sua senha is
                                 required.</div>
-                            <div class="esqueceu"><a class="esq" href="../RedefinirSenha/RedefinirSenha.html">ESQUECEU
+                            <div class="esqueceu"><a class="esq" style="border: none;" href="../RedefinirSenha/RedefinirSenha.html">ESQUECEU
                                     SUA SENHA?</a></div>
                         </div>
 
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div>
                         <div class="g-recaptcha" data-sitekey="|*SEU-SITE-KEY*|"></div>
                         <div class="d-grid">
                             <button class="send btn-lg disabled" id="submitButton" onclick="login()">ENTRAR</button>
@@ -81,16 +78,13 @@
                 <div class="container px-5 my-5">
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="registrarSeuCPF" type="text" placeholder="Digite seu CPF"
+                            <input class="form-control" id="SeuCPF" type="text" placeholder="Digite seu CPF"
                                 data-sb-validations="required" />
                             <label for="newField3">Digite seu CPF</label>
                             <div class="invalid-feedback" data-sb-feedback="newField3:required">New Field 3 is required.
                             </div>
                         </div>
 
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div>
                         <div class="d-grid">
                             <button class="send btn-lg disabled" id="submitButton" onclick="menuCadastrar()"
                                 type="button">CADASTRAR</button>
@@ -110,9 +104,9 @@
                 CADASTRO NO SITE: 01/12/2021 <br />
                 PERÍODO DE COMPRAS: 01/01/2021 a 23/12/2021 <br />
                 SORTEIO: 25/12/2021 <br />
-                Regulamento completo em {{criar link para chamar “www.evot.com.br”}} <br />
-                Certificado de Autorização {{criar link para chamar qualuer arquivo em pdf”}} <br />
-                <br />
+                Regulamento completo em <a href="http://www.evot.com.br" target="_blank" style="border: none; color: white;" rel="noopener noreferrer">www.evot.com.br</a><br />
+                <a href="../IMG/8.pdf" target="_blank" rel="noopener noreferrer" style="border: none; color: white;" >Certificado de Autorização </a> <br />
+                <br />    
                 sac - evot@evot.com.br - (21) 99999-9999 <br />
             </p>
             <img src="../IMG/facebook.png">

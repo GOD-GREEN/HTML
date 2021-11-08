@@ -117,6 +117,22 @@ a:hover{
     size: 29pt;
 }
 
+.head{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    
+    size: 29pt;
+}
+
+.PDFview{
+    margin-top: 60px !important;
+    width: 300px !important;
+    height: 90px !important;
+    padding: 0px !important;
+    
+}
+
+
 #text{
     margin: 0 auto;
     padding-top: 100px;

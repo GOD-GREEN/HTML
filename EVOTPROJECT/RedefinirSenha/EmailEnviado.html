@@ -13,9 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/Redefinir.css">
     <link rel="shortcut icon" href="../IMG/favicon.png">
-   <!--
-    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+   <!--Scripts-->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../JS/main.js"></script>
@@ -39,21 +37,23 @@
 <section id="principal">
     <div id="banner"> 
         <div id="text">
-         <h2 class="header">REDEFINIÇÃO DE SENHA</h2>
-         <h5 class="text00">Digite seu email e enviaremos instruções para que você possa entrar novamente.</h5>
-                
-        <div class="container px-5 my-5">
-            <form id="contactForme" method="POST" >
-                <div class="form-floating mb-3 input">
-                    <input class="form-control" name="email" id="Mails" type="email" placeholder="Digite seu e-mail ou CPF" data-sb-validations="required,email" />
-                    <label for="email">Digite seu e-mail ou CPF</label>
-                </div>
-            </form>
-
-            <div class="d-grid">
-                <button class="btn-lg disabled send" id="SendMail" onclick="sendEmail()">ENVIAR</button>
-            </div>
+            <br />
+         <h2 class="head">REDEFINIÇÃO DE SENHA</h2>
+         <br />
+    
+         <div class="imgConfig">
+            <img src="../IMG/tick-sign 1.png">
         </div>
+        <br />
+        
+         <h2 class="head">Solicitação
+            efetuada com sucesso!
+           <br />
+           <br />
+           Favor verificar a sua caixa de email</h2>
+             
+         
+           <button class="btn-lg disabled send PDFview" id="View" onclick="view()">clicar aqui para <br> visualizar o modelo <br> do email</button>
         
     </div>
     </div>

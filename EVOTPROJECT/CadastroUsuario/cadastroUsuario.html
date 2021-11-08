@@ -15,11 +15,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/cadUsuario.css">
     <link rel="shortcut icon" href="../IMG/favicon.png">
-    <script src="../JS/main.js"></script>
 
 </head>
 
-<body>
+<body onpageshow="carregaCPF()">
     <header id="cabecalho">
         <div id="logo">
             <img class="logo00" src="../IMG/logo.png">
@@ -39,23 +38,25 @@
 
             <div class="cad">
                 <ul class="progressbar">
-                    <li class="active" data-step="1" bar="" step="1">
-                        <div class="step"> DADOS PESSOAIS</div>
+                    <li id="mody1" class="active" step="1" data-step="1">
+                        <div id="mod1" class="step"> DADOS PESSOAIS</div>
                     </li>
-                    <li class="inative" step="2" data-step="2">
-                        <div class="step dont"> CONTATO </div>
-                    </li>
-
-                    <li class="inative" step="3" data-step="3">
-                        <div class="step dont"> ENDEREÇO </div>
+                    <li id="mody2" class="inative" step="2" data-step="2">
+                        <div id="mod2" class="step dont"> CONTATO </div>
                     </li>
 
-                    <li class="inative" step="4" data-step="4">
-                        <div class="step dont"> SENHA </div>
+                    <li id="mody3" class="inative" step="3" data-step="3">
+                        <div id="mod3" class="step dont"> ENDEREÇO </div>
                     </li>
-                
+
+                    <li id="mody4" class="inative" step="4" data-step="4">
+                        <div id="mod4" class="step dont"> SENHA </div>
+                    </li>
+
                 </ul>
             </div>
+
+            <!--################### DADOS PESSOAIS #######################-->
 
             <div id="dadosPessoais">
                 <div id="text">
@@ -64,37 +65,41 @@
                 <div class="formu">
                     <div class="container px-5 my-5">
                         <form name="form" id="contactForm" data-sb-form-api-token="API_TOKEN">
+
                             <div class="input-group">
                                 <div class="form-floating mb-3 input">
                                     <input class="form-control" id="cadCPF" type="text" placeholder="Digite seu CPF"
                                         data-sb-validations="required,email" />
-                                    <label for="digiteSeuEMailOuCpf">Digite seu CPF</label>
+                                    <label for="cadCPF">Digite seu CPF</label>
                                 </div>
 
                                 <div class="form-floating mb-3 input">
                                     <input class="form-control" id="cadNasc" type="text"
                                         placeholder="Data de nascimento" data-sb-validations="required,email" />
-                                    <label for="digiteSeuEMailOuCpf">Data de nascimento</label>
+                                    <label for="cadNasc">Data de nascimento</label>
                                 </div>
 
                                 <div class="form-floating mb-3 input">
                                     <input class="form-control" id="cadRG" type="text"
                                         placeholder="Digite seu RG - NÃO OBRIGATÓRIO" />
-                                    <label for="digiteSeuEMailOuCpf">Digite seu RG - NÃO OBRIGATÓRIO</label>
+                                    <label for="cadRG">Digite seu RG - NÃO OBRIGATÓRIO</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="cadNome" type="text"
                                         placeholder="Digite seu nome completo" data-sb-validations="required,email" />
-                                    <label for="digiteSeuEMailOuCpf">Digite seu nome completo</label>
+                                    <label for="cadNome">Digite seu nome completo</label>
                                 </div>
                             </div>
+
                         </form>
-                        <button class="btn-lg disabled send" id="submitButton" onclick="next()">AVANÇAR</button>
+
                     </div>
 
                 </div>
             </div>
+
+            <!--################### CONTATO #######################-->
 
             <div id="contato" style="display: none;">
                 <div id="text">
@@ -103,34 +108,39 @@
                 <div class="formu">
                     <div class="container px-5 my-5">
                         <form name="form" id="contactForm" data-sb-form-api-token="API_TOKEN">
+
                             <div class="input-group">
                                 <div class="form-floating mb-3 ">
-                                    <input class="form-control" id="cadEmail" type="email" placeholder="Digite seu e-mail"
-                                        data-sb-validations="required,email" />
-                                    <label for="digiteSeuEMailOuCpf">Digite seu e-mail</label>
+                                    <input class="form-control" id="cadEmail" type="email"
+                                        placeholder="Digite seu e-mail" data-sb-validations="required,email" />
+                                    <label for="cadEmail">Digite seu e-mail</label>
                                 </div>
 
                                 <div class="form-floating mb-3 ">
                                     <input class="form-control" id="cadTell" type="text"
-                                        placeholder="Digite seu telefone principal" data-sb-validations="required,email" />
-                                    <label for="digiteSeuEMailOuCpf">Digite seu telefone principal</label>
+                                        placeholder="Digite seu telefone principal"
+                                        data-sb-validations="required,email" />
+                                    <label for="cadTell">Digite seu telefone principal</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="cadTell0" type="text"
                                         placeholder="Digite seu telefone de recado - NÃO OBRIGATÓRIO" />
-                                    <label for="digiteSeuEMailOuCpf">&emsp;Digite seu telefone de recado - NÃO OBRIGATÓRIO</label>
+                                    <label for="cadTell0">&emsp;Digite seu telefone de recado - NÃO
+                                        OBRIGATÓRIO</label>
                                 </div>
-                                
+
                             </div>
+
                         </form>
-                        <button class="btn-lg disabled send" id="next" onclick="nextEnd()">AVANÇAR</button>
-                        <button class="btn-lg disabled send back" id="back" onclick="back()">VOLTAR</button>
+
                     </div>
 
 
                 </div>
             </div>
+
+            <!--################### ENDEREÇO #######################-->
 
             <div id="endereco" style="display: none;">
                 <div id="text">
@@ -138,63 +148,132 @@
                 </div>
                 <div class="formu">
                     <div class="container px-5 my-5">
-                        <form name="form" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form name="frmCEP" id="contactForm" data-sb-form-api-token="API_TOKEN">
+
                             <div class="input-group">
-                              
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="CEP" type="text"
-                                        placeholder="Digite seu telefone principal" data-sb-validations="required,email" />
-                                    <label for="digiteSeuEMailOuCpf">Digite seu CEP</label>
+                                    <input class="form-control" id="CEP" name="CEP" type="text" maxlength="8"
+                                        placeholder="Digite seu telefone principal"
+                                        data-sb-validations="required,email" />
+                                    <label for="CEP">Digite seu CEP</label>
                                 </div>
 
-                                <button class="btn-lg disabled send buscar" id="busca" onclick="busca()">BUSCAR</button>
+                                <input type="button" class="btn-lg disabled send buscar" name="btnCEP" id="busca"
+                                    onclick="buscaCEP(document.frmCEP.CEP.value);" value="BUSCAR">
                                 <br>
+
                                 <div class="form-floating mb-3 num">
-                                    <input class="form-control" id="Logadouro" type="text"
+                                    <input class="form-control" id="Logradouro" type="text"
                                         placeholder="Digite seu telefone de recado - NÃO OBRIGATÓRIO" />
-                                    <label for="digiteSeuEMailOuCpf">&emsp;Logadouro</label>
+                                    <label for="Logradouro">&emsp;Logradouro</label>
                                 </div>
 
                                 <div class="form-floating mb-3 num">
                                     <input class="form-control" id="Numero" type="text"
                                         placeholder="Digite seu telefone de recado - NÃO OBRIGATÓRIO" />
-                                    <label for="digiteSeuEMailOuCpf">&emsp;Número</label>
+                                    <label for="Numero">&emsp;Número</label>
                                 </div>
 
                                 <div class="form-floating mb-3 num">
                                     <input class="form-control" id="Complemento" type="text"
                                         placeholder="Digite seu telefone de recado - NÃO OBRIGATÓRIO" />
-                                    <label for="digiteSeuEMailOuCpf">&emsp;Complemento</label>
+                                    <label for="Complemento">&emsp;Complemento</label>
                                 </div>
 
                                 <div class="form-floating mb-3 num">
                                     <input class="form-control" id="Bairro" type="text"
                                         placeholder="Digite seu telefone de recado - NÃO OBRIGATÓRIO" />
-                                    <label for="digiteSeuEMailOuCpf">&emsp;Bairro</label>
+                                    <label for="Bairro">&emsp;Bairro</label>
                                 </div>
 
                                 <div class="form-floating mb-3 num">
                                     <input class="form-control" id="Cidade" type="text"
                                         placeholder="Digite seu telefone de recado - NÃO OBRIGATÓRIO" />
-                                    <label for="digiteSeuEMailOuCpf">&emsp;Cidade</label>
+                                    <label for="Cidade">&emsp;Cidade</label>
                                 </div>
-                             
+
                                 <div class="form-floating mb-3 num">
                                     <input class="form-control" id="UF" type="text" placeholder="Digite seu e-mail"
                                         data-sb-validations="required,email" />
-                                    <label for="digiteSeuEMailOuCpf">UF</label>
+                                    <label for="UF">UF</label>
                                 </div>
 
                             </div>
                         </form>
-                        <button class="btn-lg disabled send" id="next" onclick="nextPass()">AVANÇAR</button>
-                        <button class="btn-lg disabled send back" id="back" onclick="backCont()">VOLTAR</button>
+
                     </div>
+
+                </div>
+
+            </div>
+
+            <!--################### SENHA #######################-->
+
+            <div id="senha" style="display: none;">
+                <div id="text">
+                    <h5 class="text00">DADOS PESSOAIS: </h5>
+                </div>
+                <div class="box">
+
+                    <div class="container px-5 my-5 ">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                            <div class="form-floating mb-3">
+                                <input class="form-control password" id="pass" type="password" placeholder="Senha"
+                                    data-sb-validations="required" />
+                                <label for="pass">Senha</label>
+                                <div class="invalid-feedback" data-sb-feedback="senha:required">Senha is required.</div>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input class="form-control password" id="confirmarSenha" type="password"
+                                    placeholder="Confirmar senha" data-sb-validations="required" />
+                                <label for="confirmarSenha">Confirmar senha</label>
+                                <div class="invalid-feedback" data-sb-feedback="confirmarSenha:required">Confirmar senha
+                                    is required.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="form-check form-switch">
+
+                                    <input class="form-check-input text02"
+                                        id="estouCienteEConcedoPermissaoDaUtilizacaaoDosMeusDadosParaEfeitoDaPromocaoApuracaoEPremiacao"
+                                        type="checkbox"
+                                        name="estouCienteEConcedoPermissaoDaUtilizacaaoDosMeusDadosParaEfeitoDaPromocaoApuracaoEPremiacao" />
+
+                                    <label class="form-check-label text01"
+                                        for="estouCienteEConcedoPermissaoDaUtilizacaaoDosMeusDadosParaEfeitoDaPromocaoApuracaoEPremiacao">Estou
+                                        ciente e concedo permissão da utilizaçaão dos meus dados para efeito da
+                                        promoção, apuração e premiação.</label>
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input text02" id="liEAceitoOUrlRegulamento" type="checkbox"
+                                        name="liEAceitoOUrlRegulamento" />
+
+                                    <label class="form-check-label text01" for="liEAceitoOUrlRegulamento">Li e aceito o
+                                        <a class="regulamento" href="http://" target="_blank"
+                                            rel="noopener noreferrer">Regulamento</a></label>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
 
                 </div>
             </div>
+
         </div>
+        <button class="btn-lg disabled send" id="submitButton" onclick="next()">AVANÇAR</button>
+        <button class="btn-lg disabled send" style="display: none;" id="finalizar"
+            onclick="finalizar()">FINALIZAR</button>
+        <button class="btn-lg disabled send back" id="back" onclick="back()">VOLTAR</button>
     </section>
     <footer>
         <div id="rodape">
@@ -202,9 +281,9 @@
                 CADASTRO NO SITE: 01/12/2021 <br />
                 PERÍODO DE COMPRAS: 01/01/2021 a 23/12/2021 <br />
                 SORTEIO: 25/12/2021 <br />
-                Regulamento completo em {{criar link para chamar “www.evot.com.br”}} <br />
-                Certificado de Autorização {{criar link para chamar qualuer arquivo em pdf”}} <br />
-                <br />
+                Regulamento completo em <a href="http://www.evot.com.br" target="_blank" style="border: none; color: white;" rel="noopener noreferrer">www.evot.com.br</a><br />
+                <a href="../IMG/8.pdf" target="_blank" rel="noopener noreferrer" style="border: none; color: white;" >Certificado de Autorização </a> <br />
+                <br />    
                 sac - evot@evot.com.br - (21) 99999-9999 <br />
             </p>
             <img src="../IMG/facebook.png">
@@ -214,5 +293,13 @@
         </div>
     </footer>
 </body>
+
+<!--SCRIPTS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+<script src="../JS/main.js"></script>
 
 </html>
