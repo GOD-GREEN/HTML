@@ -306,13 +306,15 @@ h3 {
 }
 
 .card {
-    float: left;
+    /* float: left; */
     width: 321.33px;
     height: 150px;
+    top: -5px !important;
     background-color: #00995d;
+    /* z-index: 1; */
 }
 
-.ca {
+/* .ca {
     margin: 0 15px 0 0;
 }
 
@@ -323,7 +325,7 @@ h3 {
 
 .cc {
     margin: 0 0 0 15px;
-}
+} */
 
 #layout {
     margin: 400px auto;
