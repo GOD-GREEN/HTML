@@ -2,12 +2,13 @@
 
 let valor1 = 20;
 let valor2 = 30;
+let total;
 
 if (valor1<valor2)
-    let total = valor2 - valor1;
+    total = valor2 - valor1;
     
 else
-    let total = valor1 - valor2;
+    total = valor1 - valor2;
 
     console.log(total)
 
